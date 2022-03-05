@@ -8198,6 +8198,10 @@ h1, h2, h3, h4, h5,
   position: relative; }
   .login-wrap h3 {
     font-weight: 300; }
+.signup-wrap {
+  position: relative; }
+  .signup-wrap h3 {
+    font-weight: 300; }
 
 .form-group {
   position: relative;
