@@ -3452,6 +3452,12 @@ input[type="button"].btn-block {
     -ms-flex-pack: justify;
     justify-content: space-between; }
 
+.sign-color a{
+  color: #4D77FF !important;
+}
+.sign-color {
+  color: #000 !important;
+}
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
