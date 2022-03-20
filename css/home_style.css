@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 html {
   overflow-x: hidden;
 }
 
 body {
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif', serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   color: #6F8BA4;
@@ -13,7 +13,7 @@ body {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif', serif;
   font-weight: 700;
   color: #222;
 }
@@ -84,7 +84,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   font-weight: 700;
   letter-spacing: .5px;
   padding: .75rem 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif', serif;
   text-transform: uppercase;
   border-radius: 5px;
   border: 2px solid transparent;
@@ -373,7 +373,7 @@ a:focus {
   font-weight: 600;
   padding: 10px 15px;
   color: #222;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif', serif;
   text-transform: capitalize;
   font-size: 16px;
   transition: all .25s ease;
