@@ -1,20 +1,20 @@
-
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 html {
   overflow-x: hidden;
 }
 
 body {
-  line-height: 1.6;
-  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-family: 'Noto Serif', serif !important;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   color: #6F8BA4;
   font-weight: 400;
+  background: #f8f9fd !important;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Exo", sans-serif;
+  font-family: 'Noto Serif', serif;
   font-weight: 700;
   color: #222;
 }
@@ -78,6 +78,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding: 7rem 0px;
 }
 
+.sign-padd{
+  padding: 10px 20px !important;
+}
+
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -85,11 +89,11 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   font-weight: 700;
   letter-spacing: .5px;
   padding: .75rem 2rem;
-  font-family: "Exo", sans-serif;
-  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
   border-radius: 5px;
   border: 2px solid transparent;
   transition: all .35s ease;
+  align-self: center;
 }
 
 .btn.btn-icon i {
@@ -109,15 +113,15 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-main:hover {
-  background: #e12454;
-  border-color: #e12454;
+  background: #5ee6eb;
+  border-color: #5ee6eb;
   color: #fff;
 }
 
 .btn-main-2 {
-  background: #e12454;
+  background: #5ee6eb;
   color: #fff;
-  border-color: #e12454;
+  border-color: #5ee6eb;
 }
 
 .btn-main-2:hover {
@@ -287,7 +291,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #e12454;
+  color: #5ee6eb;
   text-decoration: none;
 }
 
@@ -374,10 +378,13 @@ a:focus {
   font-weight: 600;
   padding: 10px 15px;
   color: #222;
-  font-family: "Exo", sans-serif;
+  font-family: 'Noto Serif', serif;
   text-transform: capitalize;
   font-size: 16px;
   transition: all .25s ease;
+}
+#navbarmain .nav-link:hover{
+  color: #4d77ff !important;
 }
 
 .dropdown-toggle::after {
@@ -401,7 +408,7 @@ a:focus {
   visibility: hidden;
   transition: all 0.3s ease-out 0s;
   border: 0px;
-  border-top: 5px solid #e12454;
+  border-top: 5px solid #5ee6eb;
   border-radius: 0px;
 }
 
@@ -420,7 +427,7 @@ a:focus {
 }
 
 .dropdown .dropdown-item:hover {
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .header-top-bar {
@@ -483,13 +490,13 @@ a:focus {
 }
 
 .text-color-2 {
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .divider {
   width: 40px;
   height: 5px;
-  background: #e12454;
+  background: #5ee6eb;
 }
 
 @media (max-width: 480px) {
@@ -671,7 +678,7 @@ a:focus {
 }
 
 .service i {
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .service h4 {
@@ -704,7 +711,7 @@ a:focus {
 }
 
 .department-service li i {
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .doctors .btn-group .btn {
@@ -719,7 +726,7 @@ a:focus {
 .doctors .btn-group .btn.active {
   box-shadow: none !important;
   border-color: transparent;
-  background: #e12454;
+  background: #5ee6eb;
   color: #fff;
 }
 
@@ -731,14 +738,14 @@ a:focus {
 .doctors .btn-group .btn:focus {
   box-shadow: none !important;
   border-color: transparent;
-  background: #e12454;
+  background: #5ee6eb;
   color: #fff;
 }
 
 .doctors .btn-group .btn:hover {
   box-shadow: none !important;
   border-color: transparent;
-  background: #e12454;
+  background: #5ee6eb;
   color: #fff;
 }
 
@@ -776,7 +783,7 @@ a:focus {
 
 .doctor-info li i {
   margin-right: 20px;
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .read-more {
@@ -929,7 +936,7 @@ a:focus {
 
 .testimonial-block.style-2 i {
   bottom: -20px;
-  color: #e12454;
+  color: #5ee6eb;
   opacity: .3;
 }
 
@@ -1025,7 +1032,7 @@ a:focus {
   font-size: 50px;
   margin-bottom: 15px;
   display: inline-block;
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .blog-item-content h2 {
@@ -1081,7 +1088,7 @@ a:focus {
   color: #223a66;
   padding: 40px;
   font-style: italic;
-  border-left: 5px solid #e12454;
+  border-left: 5px solid #5ee6eb;
   margin: 25px 0px;
 }
 
@@ -1288,7 +1295,7 @@ a:focus {
   bottom: 0px;
   width: 35px;
   height: 3px;
-  background: #e12454;
+  background: #5ee6eb;
 }
 
 .sidebar-widget.latest-post .media img {
@@ -1401,7 +1408,7 @@ a:focus {
 }
 
 .widget .footer-menu a:hover {
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .footer-contact-block span {
@@ -1434,7 +1441,7 @@ a:focus {
 }
 
 .widget-contact h6 i {
-  color: #e12454;
+  color: #5ee6eb;
 }
 
 .subscribe {
@@ -1456,7 +1463,7 @@ a:focus {
 
 .backtop {
   position: fixed;
-  background: #e12454;
+  background: #5ee6eb;
   z-index: 9999;
   display: inline-block;
   right: 55px;
