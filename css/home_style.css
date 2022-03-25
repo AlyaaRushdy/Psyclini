@@ -8,7 +8,6 @@ body {
   font-family: 'Noto Serif', serif !important;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  color: #6F8BA4;
   font-weight: 400;
   background: #f8f9fd !important;
 }
@@ -78,10 +77,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding: 7rem 0px;
 }
 
-.sign-padd{
-  padding: 10px 20px !important;
-}
-
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -113,15 +108,15 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .btn-main:hover {
-  background: #5ee6eb;
-  border-color: #5ee6eb;
+  background: #4DD0FF;
+  border-color: #4DD0FF;
   color: #fff;
 }
 
 .btn-main-2 {
-  background: #5ee6eb;
+  background: #4DD0FF;
   color: #fff;
-  border-color: #5ee6eb;
+  border-color: #4DD0FF;
 }
 
 .btn-main-2:hover {
@@ -135,6 +130,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   background: transparent;
   color: #223a66;
 }
+
 
 .btn-solid-border:hover {
   border: 2px solid #223a66;
@@ -221,7 +217,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .section-sm {
@@ -291,7 +287,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #5ee6eb;
+  color: #4DD0FF;
   text-decoration: none;
 }
 
@@ -335,7 +331,7 @@ a:focus {
 }
 
 .title-color {
-  color: #223a66;
+  color: #4d77ff;
 }
 
 .secondary-bg {
@@ -347,7 +343,7 @@ a:focus {
 }
 
 .section-title h2 {
-  color: #223a66;
+  color: #4d77ff;
 }
 
 .text-lg {
@@ -408,7 +404,7 @@ a:focus {
   visibility: hidden;
   transition: all 0.3s ease-out 0s;
   border: 0px;
-  border-top: 5px solid #5ee6eb;
+  border-top: 5px solid #4DD0FF;
   border-radius: 0px;
 }
 
@@ -427,7 +423,7 @@ a:focus {
 }
 
 .dropdown .dropdown-item:hover {
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .header-top-bar {
@@ -463,9 +459,9 @@ a:focus {
 .banner {
   position: relative;
   overflow: hidden;
-  background: #fff;
-  background: url("../images/bg/slider-bg-1.jpg") no-repeat;
-  background-size: cover;
+  background: #f8f9fd ;
+  background: url("../img/banner.png") no-repeat right;
+  background-size: contain;
   min-height: 550px;
 }
 
@@ -478,7 +474,7 @@ a:focus {
   line-height: 1.2;
   letter-spacing: -1.2px;
   text-transform: capitalize;
-  color: #223a66;
+  color: #4d77ff;
 }
 
 .letter-spacing {
@@ -490,13 +486,13 @@ a:focus {
 }
 
 .text-color-2 {
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .divider {
   width: 40px;
   height: 5px;
-  background: #5ee6eb;
+  background: #4DD0FF;
 }
 
 @media (max-width: 480px) {
@@ -506,7 +502,7 @@ a:focus {
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
+    background: #f8f9fd !important;
   }
 }
 
@@ -517,7 +513,7 @@ a:focus {
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
+    background: #f8f9fd !important;
   }
 }
 
@@ -527,19 +523,103 @@ a:focus {
     line-height: 70px;
   }
   .banner {
-    background: #fff !important;
+    background: #f8f9fd !important;
   }
 }
 
 @media (max-width: 992px) {
   .banner {
-    background: #fff !important;
+    background: #f8f9fd !important;
   }
 }
+
+.align-right{
+  direction: rtl;
+}
+
+.book-appointment {
+	position: relative;
+	overflow: hidden;
+	background: #f8f9fd ;
+	background: url("../img/doctors.png") no-repeat left;
+	background-size: contain;
+	min-height: 550px;
+  }
+  
+  .book-appointment .block {
+	padding: 80px 0px 160px;
+  }
+  
+  .book-appointment .block h1 {
+	font-size: 60px;
+	line-height: 1.2;
+	letter-spacing: -1.2px;
+	text-transform: capitalize;
+	color: #4d77ff;
+  }
+  
+  .letter-spacing {
+	letter-spacing: 2px;
+  }
+  
+  .text-color {
+	color: #223a66;
+  }
+  
+  .text-color-2 {
+	color: #4DD0FF;
+  }
+  
+  .divider {
+	width: 40px;
+	height: 5px;
+	background: #4DD0FF;
+  }
+  
+  @media (max-width: 480px) {
+	.book-appointment .block h1 {
+	  font-size: 38px;
+	  line-height: 50px;
+	}
+	.book-appointment {
+	  min-height: 450px;
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  @media (max-width: 400px) {
+	.book-appointment .block h1 {
+	  font-size: 28px;
+	  line-height: 40px;
+	}
+	.book-appointment {
+	  min-height: 450px;
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.book-appointment .block h1 {
+	  font-size: 56px;
+	  line-height: 70px;
+	}
+	.book-appointment {
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  @media (max-width: 992px) {
+	.book-appointment {
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  
 
 .about-img img {
   border-radius: 5px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  background: transparent;
 }
 
 .award-img {
@@ -678,7 +758,7 @@ a:focus {
 }
 
 .service i {
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .service h4 {
@@ -711,7 +791,7 @@ a:focus {
 }
 
 .department-service li i {
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .doctors .btn-group .btn {
@@ -726,7 +806,7 @@ a:focus {
 .doctors .btn-group .btn.active {
   box-shadow: none !important;
   border-color: transparent;
-  background: #5ee6eb;
+  background: #4DD0FF;
   color: #fff;
 }
 
@@ -738,14 +818,14 @@ a:focus {
 .doctors .btn-group .btn:focus {
   box-shadow: none !important;
   border-color: transparent;
-  background: #5ee6eb;
+  background: #4DD0FF;
   color: #fff;
 }
 
 .doctors .btn-group .btn:hover {
   box-shadow: none !important;
   border-color: transparent;
-  background: #5ee6eb;
+  background: #4DD0FF;
   color: #fff;
 }
 
@@ -783,7 +863,7 @@ a:focus {
 
 .doctor-info li i {
   margin-right: 20px;
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .read-more {
@@ -936,8 +1016,8 @@ a:focus {
 
 .testimonial-block.style-2 i {
   bottom: -20px;
-  color: #5ee6eb;
-  opacity: .3;
+  color: #7C4DFF;
+  opacity: .65;
 }
 
 @media (max-width: 480px) {
@@ -1032,7 +1112,7 @@ a:focus {
   font-size: 50px;
   margin-bottom: 15px;
   display: inline-block;
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .blog-item-content h2 {
@@ -1088,7 +1168,7 @@ a:focus {
   color: #223a66;
   padding: 40px;
   font-style: italic;
-  border-left: 5px solid #5ee6eb;
+  border-left: 5px solid #4DD0FF;
   margin: 25px 0px;
 }
 
@@ -1295,7 +1375,7 @@ a:focus {
   bottom: 0px;
   width: 35px;
   height: 3px;
-  background: #5ee6eb;
+  background: #4DD0FF;
 }
 
 .sidebar-widget.latest-post .media img {
@@ -1408,7 +1488,7 @@ a:focus {
 }
 
 .widget .footer-menu a:hover {
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .footer-contact-block span {
@@ -1441,7 +1521,7 @@ a:focus {
 }
 
 .widget-contact h6 i {
-  color: #5ee6eb;
+  color: #4DD0FF;
 }
 
 .subscribe {
@@ -1463,7 +1543,7 @@ a:focus {
 
 .backtop {
   position: fixed;
-  background: #5ee6eb;
+  background: #4DD0FF;
   z-index: 9999;
   display: inline-block;
   right: 55px;
@@ -1489,4 +1569,58 @@ a:focus {
   opacity: 1;
 }
 
-/*# sourceMappingURL=maps/style.css.map */
+.contact .contact-form .form-control {
+  margin-bottom: 30px;
+}
+
+.contact .address-block .media {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .contact .address-block .media {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .contact .address-block .media:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.contact .address-block .media i {
+  color: #4d77ff;
+  font-size: 30px;
+  margin-right: 5px;
+  margin-left: 15px ;
+  width: 40px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .contact .address-block .media i {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.contact .address-block .media .media-body h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact .address-block .media .media-body p {
+  line-height: 25px;
+  margin-left: 5px;
+}
+
+.contact .address-block .media:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.client-info h4{
+  color: #7C4DFF;
+}
+
+/*# sourceMappingURL=home_style.css.map */

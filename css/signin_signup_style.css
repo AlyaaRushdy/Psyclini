@@ -5508,9 +5508,6 @@ button.bg-dark:focus {
 .rounded-circle {
   border-radius: 50% !important; }
 
-.rounded-pill {
-  border-radius: 50rem !important; }
-
 .rounded-0 {
   border-radius: 0 !important; }
 
@@ -8372,3 +8369,7 @@ h1, h2, h3, h4, h5,
         border: 1px solid transparent;
         background: #4D77FF;
         color: #fff; }
+
+.signin-form .rounded-pill, .signup-form .rounded-pill{
+  line-height: 1 !important;
+}
