@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarmain">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="main_doctors.html">Doctors</a></li>
+            <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
             <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>    
             <li class="nav-item"><a class="nav-link" href="tests.html">Tests</a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>    
             <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>      
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-            <a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4 " href="Sign In.html">Sign In</a>
+            <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+            <a class="btn btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="Sign In.html">Sign In</a>
           </ul>
         </div>
       </div>
@@ -60,22 +60,85 @@
   </section>
   <!--banner end-->
 
-
-  <section class="section about" id="doctor_mainpage">
-    <div class="container">
-      <div class="row align-items-center">
-        
+  <!--book an appointment section begin-->
+  <section class="section" id="doctor_mainpage">
+    <div class="container ">
+      <div class="row align-items-center ">
+        <div class="col-lg-7">
+          <div class="appoinment-content">
+            <img src="../img/doctors.png" alt="" class="img-fluid">
+          </div>
+        </div>
         <div class="col-lg-4">
-          <div class="about-content pl-4 mt-4 mt-lg-0">
+          <div class=" pl-4 mt-4 mt-lg-0">
             <h2 class="title-color">Personal care <br>& healthy living</h2>
-            <p class="mt-4 mb-5">We provide best leading medicle service Nulla perferendis veniam deleniti ipsum officia dolores repellat laudantium obcaecati neque.</p>
-  
-            <a href="service.html" class="btn btn-main-2 btn-round-full btn-icon">Services<i class="icofont-simple-right ml-3"></i></a>
+            <p class="mt-4 mb-5">Choose your therapist and book an appointment from the comfort of your home.</p>
+            <a href="doctors.html" class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4">Book an Appointment<i class="icofont-simple-right ml-3"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!--book an appointment section end-->
+
+  <!--contact us section begin-->
+  <section class="section contact" id="contact-us">
+    <div class="container ">
+      <div class="col-md-5">
+        <h2 class="title-color">Contact Us</h2><br>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 ">
+          <div class="address-block">
+            <div class="media">
+              <i class="icofont-location-pin"></i>
+              <div class="media-body">
+                <h3>Location</h3>
+                <p>17 Bahgat Ali St., Zamalek<br>Cairo, Egypt</p>
+              </div>
+            </div>
+            <div class="media">
+              <i class="icofont-phone"></i>
+              <div class="media-body">
+                <h3>Phone</h3>
+                <p>(+20) 012 3456 7891<br> (+20) 02 2345 6234 </p>
+              </div>
+            </div>
+            <div class="media">
+              <i class="icofont-ui-email"></i>
+              <div class="media-body">
+                <h3>Email</h3>
+                <p>psyclini_clinic@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="contact-form">
+            <form action="!#" class="row">
+              <div class="col-lg-6">
+                <input type="text" name="name" class="form-control main" placeholder="Name" required>
+              </div>
+              <div class="col-lg-6">
+                <input type="email" class="form-control main" placeholder="Email" name="email" required>
+              </div>
+              <div class="col-lg-12">
+                <input type="tel" class="form-control main" placeholder="Phone" required>
+              </div>
+              <div class="col-lg-12">
+                <textarea name="message" rows="8" class="form-control main" placeholder="Your message"></textarea>
+              </div>
+              <div class="col-md-12 text-right">
+                <button class=" btn btn-primary rounded-pill submit px-3" type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--contact us section end-->
+
 
 
 

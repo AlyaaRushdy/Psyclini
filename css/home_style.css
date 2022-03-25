@@ -77,10 +77,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding: 7rem 0px;
 }
 
-.sign-padd{
-  padding: 10px 20px !important;
-}
-
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -221,7 +217,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .section-sm {
@@ -335,7 +331,7 @@ a:focus {
 }
 
 .title-color {
-  color: #223a66;
+  color: #4d77ff;
 }
 
 .secondary-bg {
@@ -537,10 +533,93 @@ a:focus {
   }
 }
 
+.align-right{
+  direction: rtl;
+}
+
+.book-appointment {
+	position: relative;
+	overflow: hidden;
+	background: #f8f9fd ;
+	background: url("../img/doctors.png") no-repeat left;
+	background-size: contain;
+	min-height: 550px;
+  }
+  
+  .book-appointment .block {
+	padding: 80px 0px 160px;
+  }
+  
+  .book-appointment .block h1 {
+	font-size: 60px;
+	line-height: 1.2;
+	letter-spacing: -1.2px;
+	text-transform: capitalize;
+	color: #4d77ff;
+  }
+  
+  .letter-spacing {
+	letter-spacing: 2px;
+  }
+  
+  .text-color {
+	color: #223a66;
+  }
+  
+  .text-color-2 {
+	color: #4DD0FF;
+  }
+  
+  .divider {
+	width: 40px;
+	height: 5px;
+	background: #4DD0FF;
+  }
+  
+  @media (max-width: 480px) {
+	.book-appointment .block h1 {
+	  font-size: 38px;
+	  line-height: 50px;
+	}
+	.book-appointment {
+	  min-height: 450px;
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  @media (max-width: 400px) {
+	.book-appointment .block h1 {
+	  font-size: 28px;
+	  line-height: 40px;
+	}
+	.book-appointment {
+	  min-height: 450px;
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.book-appointment .block h1 {
+	  font-size: 56px;
+	  line-height: 70px;
+	}
+	.book-appointment {
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  @media (max-width: 992px) {
+	.book-appointment {
+	  background: #f8f9fd !important;
+	}
+  }
+  
+  
 
 .about-img img {
   border-radius: 5px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  background: transparent;
 }
 
 .award-img {
@@ -1489,6 +1568,57 @@ a:focus {
   cursor: pointer;
   opacity: 1;
 }
+
+.contact .contact-form .form-control {
+  margin-bottom: 30px;
+}
+
+.contact .address-block .media {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .contact .address-block .media {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .contact .address-block .media:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.contact .address-block .media i {
+  color: #4d77ff;
+  font-size: 30px;
+  margin-right: 5px;
+  margin-left: 15px ;
+  width: 40px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .contact .address-block .media i {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.contact .address-block .media .media-body h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact .address-block .media .media-body p {
+  line-height: 25px;
+  margin-left: 5px;
+}
+
+.contact .address-block .media:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 
 
 /*# sourceMappingURL=home_style.css.map */
