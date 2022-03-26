@@ -1623,4 +1623,17 @@ a:focus {
   color: #7C4DFF;
 }
 
+.dir-rtl{
+  direction: rtl;
+}
+
+.testimonial-block a{
+  color: #7C4DFF;
+  text-decoration: none;
+}
+.testimonial-block a:hover{
+  color: #7C4DFF;
+  text-decoration: none;
+} 
+
 /*# sourceMappingURL=home_style.css.map */
