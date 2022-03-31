@@ -1741,6 +1741,22 @@ a:focus {
   height: 70px;
   width: 70px;
 }
+.vr {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: currentColor;
+  opacity: 0.25;
+}
+.inv{
+  display: none;
+}
+@media (max-width: 1199px){
+  .inv{
+    display: initial;
+  }
+}
 
 
 /*# sourceMappingURL=home_style.css.map */
