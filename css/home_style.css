@@ -492,7 +492,7 @@ a:focus {
 .divider {
   width: 40px;
   height: 5px;
-  background: #4DD0FF;
+  background: #7C4DFF;
 }
 
 @media (max-width: 480px) {
@@ -573,7 +573,7 @@ a:focus {
   .divider {
 	width: 40px;
 	height: 5px;
-	background: #4DD0FF;
+	background: #7C4DFF;
   }
   
   @media (max-width: 480px) {
@@ -684,8 +684,8 @@ a:focus {
   margin-top: -70px;
 }
 
-.feature-item {
-  flex-basis: 33.33%;
+.feature-item-clinic {
+  flex-basis: 30%;
   margin: 0px 10px;
   padding: 40px 30px;
   background-color: #fff;
@@ -693,16 +693,38 @@ a:focus {
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
 }
 
-.feature-item .feature-icon i {
+.feature-item-clinic .feature-icon i {
   font-size: 50px;
-  color: #223a66;
+  color: #4d77ff;
 }
 
-.feature-item h4 {
-  color: #223a66;
+.feature-item-clinic h4 {
+  color: #4d77ff;
 }
 
-.feature-item p {
+.feature-item-clinic p {
+  font-size: 14px;
+}
+
+.feature-item-doctors {
+  flex-basis: 70%;
+  margin: 0px 10px;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+
+.feature-item-doctors .feature-icon i {
+  font-size: 50px;
+  color: #4d77ff;
+}
+
+.feature-item-doctors h4 {
+  color: #4d77ff;
+}
+
+.feature-item-doctors p {
   font-size: 14px;
 }
 
@@ -714,6 +736,12 @@ a:focus {
   padding: 6px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+/*.feature-item-doctors .w-hours li span{
+  padding-right: 4px;
+  margin-left: 3px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}*/
 
 .counter-stat {
   text-align: center;
@@ -1667,6 +1695,9 @@ a:focus {
 }
 .list-style-triangle{
   list-style: disclosure-closed;
+}
+.morning-sch{
+  color: #7c4dff;
 }
 
 /*# sourceMappingURL=home_style.css.map */
