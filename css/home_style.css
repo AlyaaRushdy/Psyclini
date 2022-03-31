@@ -736,6 +736,23 @@ a:focus {
   padding: 6px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+.w-hours .morning-sch a:hover{
+  text-decoration: none;
+  color: #7C4DFF;
+
+}
+.w-hours .morning-sch a{
+  color: #7C4DFF;
+}
+
+.w-hours .afternoon-sch a:hover{
+  text-decoration: none;
+  color: #007bff;
+
+}
+.w-hours .afternoon-sch a{
+  color: #007bff;
+}
 
 /*.feature-item-doctors .w-hours li span{
   padding-right: 4px;
@@ -1699,5 +1716,9 @@ a:focus {
 .morning-sch{
   color: #7c4dff;
 }
+.afternoon-sch{
+  color: #007bff;
+}
+
 
 /*# sourceMappingURL=home_style.css.map */
