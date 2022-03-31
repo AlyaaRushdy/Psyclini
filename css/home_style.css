@@ -1699,14 +1699,15 @@ a:focus {
 }
 .mb-1{
   color: #7C4DFF;
+  
 }
 .article-subtitle{
   color:#7c4dff;
   margin-bottom: 10px;
   margin-top: 25px;
   font-size: 1.5rem;
-
 }
+
 .article-parag{
   font-size: 1.09rem !important;
 }
@@ -1718,6 +1719,27 @@ a:focus {
 }
 .afternoon-sch{
   color: #007bff;
+}
+.comment-area .mb-4{
+  color:#7C4DFF
+}
+.comment-form .mb-4{
+  color:#7C4DFF
+}
+.comment-area-box a{
+  color: #7C4DFF;
+}
+.comment-area-box a:hover{
+  text-decoration: none;
+}
+.post-owner h4{
+  padding-top: 25px;
+  color: #7C4DFF;
+
+}
+.post-owner img{
+  height: 70px;
+  width: 70px;
 }
 
 
