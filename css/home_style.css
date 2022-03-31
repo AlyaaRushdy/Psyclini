@@ -736,6 +736,23 @@ a:focus {
   padding: 6px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+.w-hours .morning-sch a:hover{
+  text-decoration: none;
+  color: #7C4DFF;
+
+}
+.w-hours .morning-sch a{
+  color: #7C4DFF;
+}
+
+.w-hours .afternoon-sch a:hover{
+  text-decoration: none;
+  color: #007bff;
+
+}
+.w-hours .afternoon-sch a{
+  color: #007bff;
+}
 
 /*.feature-item-doctors .w-hours li span{
   padding-right: 4px;
@@ -1682,14 +1699,15 @@ a:focus {
 }
 .mb-1{
   color: #7C4DFF;
+  
 }
 .article-subtitle{
   color:#7c4dff;
   margin-bottom: 10px;
   margin-top: 25px;
   font-size: 1.5rem;
-
 }
+
 .article-parag{
   font-size: 1.09rem !important;
 }
@@ -1699,5 +1717,46 @@ a:focus {
 .morning-sch{
   color: #7c4dff;
 }
+.afternoon-sch{
+  color: #007bff;
+}
+.comment-area .mb-4{
+  color:#7C4DFF
+}
+.comment-form .mb-4{
+  color:#7C4DFF
+}
+.comment-area-box a{
+  color: #7C4DFF;
+}
+.comment-area-box a:hover{
+  text-decoration: none;
+}
+.post-owner h4{
+  padding-top: 25px;
+  color: #7C4DFF;
+
+}
+.post-owner img{
+  height: 70px;
+  width: 70px;
+}
+.vr {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: currentColor;
+  opacity: 0.25;
+}
+.inv{
+  display: none;
+}
+@media (max-width: 1199px){
+  .inv{
+    display: initial;
+  }
+}
+
 
 /*# sourceMappingURL=home_style.css.map */
