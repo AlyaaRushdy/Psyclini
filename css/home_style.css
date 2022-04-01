@@ -393,9 +393,10 @@ a:focus {
 
 .dropdown .dropdown-menu {
   position: absolute;
-  display: block;
+  display: -moz-popup;
   background: #fff;
   min-width: 240px;
+  width: fit-content !important ;
   top: 130%;
   left: 0;
   right: 0px;
@@ -404,7 +405,7 @@ a:focus {
   visibility: hidden;
   transition: all 0.3s ease-out 0s;
   border: 0px;
-  border-top: 5px solid #4DD0FF;
+  border-top: 5px solid #7C4DFF;
   border-radius: 0px;
 }
 
@@ -412,6 +413,7 @@ a:focus {
   opacity: 1;
   visibility: visible;
   top: 115%;
+  display : block;
 }
 
 .dropdown .dropdown-item {
@@ -419,13 +421,16 @@ a:focus {
   border-bottom: 1px solid #eee;
   background: transparent;
   font-weight: 400;
-  color: #555;
+  color: #222;
 }
 
 .dropdown .dropdown-item:hover {
-  color: #4DD0FF;
+  color: #7C4DFF;
 }
-
+.dropdown .dropdown-item:active {
+  color: #7C4DFF !important;
+  background: transparent !important;
+}
 .header-top-bar {
   background: #223a66;
   font-size: 14px;
