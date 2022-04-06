@@ -1794,6 +1794,9 @@ a:focus {
 }
 .dep .ar{
   direction: rtl;
-  }
+}
+.font-large-p{
+  font-size: large;
+}
 
 /*# sourceMappingURL=home_style.css.map */
