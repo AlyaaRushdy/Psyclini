@@ -1786,6 +1786,7 @@ a:focus {
 .dep h4{
   color: #7C4DFF;
   text-transform: capitalize;
+  padding-top: 20px;
 }
 .dep p{
   padding-left: 3%;
@@ -1797,6 +1798,9 @@ a:focus {
 }
 .font-large-p{
   font-size: large;
+}
+.margin-auto{
+  margin: auto;
 }
 
 /*# sourceMappingURL=home_style.css.map */
