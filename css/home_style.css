@@ -1777,7 +1777,7 @@ a:focus {
 }
 
 .feature-item h4 {
-  color: #4d77ff;
+  color: #7c4dff;
 }
 
 .feature-item p {
@@ -1802,5 +1802,27 @@ a:focus {
 .margin-auto{
   margin: auto;
 }
+.create-post h4{
+  margin-bottom: 10px !important;
+  color: #4d77ff !important;
+}
+.create-post i{
+  font-size: 1.5rem;
+}
+.create-post label{
+  cursor: pointer;
+}
+.create-post .post-pic{
+  color: white;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.create-post .rounded-pill {
+  padding-right: 1.4rem !important;
+  padding-left: 1.4rem !important;
+}
+
+
 
 /*# sourceMappingURL=home_style.css.map */
