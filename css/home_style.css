@@ -905,6 +905,10 @@ a:focus {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+.doctor-img-block img{
+  width: 200px !important;
+  height: 200px;
+}
 
 .lh-35 {
   line-height: 35px;
@@ -1808,12 +1812,12 @@ a:focus {
 }
 
 .create-post i{
-  font-size: 2rem;
+  font-size: 1.75rem;
   vertical-align: middle;
 }
 .create-post .add-img{
   cursor: pointer;
-  margin-left: 1.75rem;
+  margin-left: 1.8rem;
 }
 .create-post .post-pic{
   color: white;
@@ -1828,6 +1832,9 @@ a:focus {
   text-transform: uppercase;
   margin-top: 0.65rem;
   width: 100%;
+}
+.info-block{
+  display: inline;
 }
 .info-block a{
   text-decoration: none !important;
@@ -1931,6 +1938,62 @@ a:focus {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   font-size: 1.25rem;
+}
+.contact .title-color{
+  color: #4d77ff;
+  font-size: 2.2rem !important;
+}
+.test-wrap{
+  margin: auto !important;
+
+}
+.test-wrap button{
+  width: 100%;
+  margin-top: 1rem;
+  font-size: large;
+}
+.test-wrap h3{
+  color: #4d77ff;
+  line-height: 3rem;
+}
+.test-wrap .feature-item{
+  padding: 3rem 5rem 4rem 5rem !important;
+}
+.test-wrap li{
+  line-height: 2rem !important;
+}
+
+.test-wrap .test-lable{
+  font-size: 1.25rem !important;
+  margin-right: 1rem ;
+  cursor: pointer;
+}
+.test-wrap .test-radio{
+  cursor: pointer;
+}
+.tests-main{
+  margin: auto;
+}
+
+.feature-item-test{
+  display: inline ;
+  height: min-content;
+  margin: 1.5rem 2rem !important;
+  padding: 1rem 3rem !important;
+  min-width: 43% !important;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+.feature-item-test a{
+  text-decoration: none !important;
+}
+.feature-item-test .test-title{
+  font-size: 1.5rem;
+  color: #4d77ff;
+}
+.feature-item-test .btn{
+  margin-bottom: 2rem;
 }
 
 
