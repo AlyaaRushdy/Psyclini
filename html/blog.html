@@ -31,15 +31,15 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                <li><a class="dropdown-item" href="department.html">All Departments</a></li>
-                <li><a class="dropdown-item" href="department.html#child_adol">Child and Adolescence Disorders</a></li>
-                <li><a class="dropdown-item" href="department.html#general">General Psychiatry</a></li>
-                <li><a class="dropdown-item" href="department.html#geriatric">Geriatric Psychiatry</a></li>
-                <li><a class="dropdown-item" href="department.html#pid">Psychiatry of Intellectual Disability (PID)</a></li>
-                <li><a class="dropdown-item" href="department.html#marital">Marital and Family Relations</a></li>
-                <li><a class="dropdown-item" href="department.html#forensic">Forensic Psychiatry</a></li>
-                <li><a class="dropdown-item" href="department.html#addiction">Addiction</a></li>
-                <li><a class="dropdown-item" href="department.html#life_coach">Life Coach</a></li>
+                  <li><a class="dropdown-item" href="department.html">All Departments</a></li>
+                  <li><a class="dropdown-item" href="department.html#child_adol">Child and Adolescence Disorders</a></li>
+                  <li><a class="dropdown-item" href="department.html#general">General Psychiatry</a></li>
+                  <li><a class="dropdown-item" href="department.html#geriatric">Geriatric Psychiatry</a></li>
+                  <li><a class="dropdown-item" href="department.html#pid">Psychiatry of Intellectual Disability (PID)</a></li>
+                  <li><a class="dropdown-item" href="department.html#marital">Marital and Family Relations</a></li>
+                  <li><a class="dropdown-item" href="department.html#forensic">Forensic Psychiatry</a></li>
+                  <li><a class="dropdown-item" href="department.html#addiction">Addiction</a></li>
+                  <li><a class="dropdown-item" href="department.html#life_coach">Life Coach</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
@@ -63,14 +63,26 @@
           <div class="row">
 
             <div class="col-lg-12 mb-5"><!--Create a Post-->
-              <div class="single-blog-item feature-item create-post ">
+              <div class="single-blog-item feature-item create-post">
                 <h4 class="mb-1">Create a Post</h4> 
                 <textarea class="form-control mb-4" name="comment" id="comment" cols="30" rows="5" placeholder="What are you thinking??"></textarea>
-                <label class="text-muted">
-                  <i class="icofont-image "><input type="file" name="post-pic" id="post-pic" class="post-pic" accept="image/*"></i>
+                <label >Department
+                  <select class="form-select post-dep-dropdown" >
+                    <option class="op" value="child_adol">Child and Adolescence Disorders</option>
+                    <option class="op" value="general">General Psychiatry</option>
+                    <option class="op" value="geriatric">Geriatric Psychiatry</option>
+                    <option class="op" value="pid">Psychiatry of Intellectual Disability (PID)</option>
+                    <option class="op" value="marital">Marital and Family Relations</option>
+                    <option class="op" value="forensic">Forensic Psychiatry</option>
+                    <option class="op" value="addiction">Addiction</option>
+                    <option class="op" value="life_coach">Life Coach</option>
+                  </select>
+                </label>
+                <label class="text-muted add-img">
+                  <i class="icofont-image"><input type="file" name="post-pic" id="post-pic" class="post-pic" accept="image/*"></i>
                   Add an Image 
                 </label>
-                <div class="text-right">
+                <div class="text-right ">
                   <input class="btn btn-primary rounded-pill px-3 " type="submit" name="submit-contact" id="post" value="Post">
                 </div>
               </div>
