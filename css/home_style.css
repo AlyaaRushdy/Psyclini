@@ -1412,7 +1412,6 @@ a:focus {
 .comment-reply-form textarea, .comment-reply-form .btn-main {
   height: auto;
 }
-
 .sidebar-widget {
   margin-bottom: 10px;
   padding-bottom: 35px;
@@ -1995,7 +1994,24 @@ a:focus {
 .feature-item-test .btn{
   margin-bottom: 2rem;
 }
-
+.a-no-decor {
+  text-decoration: none !important;
+}
+footer i:hover{
+  color: #4d77ff !important;
+}
+.ms-3 {
+  margin-left: 1rem !important;
+}
+footer ul li{
+  vertical-align: middle;
+}
+.inline{
+  display: inline !important;
+}
+.my-footer i{
+  font-size: 1.125rem !important;
+}
 
 
 /*# sourceMappingURL=home_style.css.map */
