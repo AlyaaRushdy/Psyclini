@@ -1808,12 +1808,12 @@ a:focus {
 }
 
 .create-post i{
-  font-size: 2rem;
+  font-size: 1.75rem;
   vertical-align: middle;
 }
 .create-post .add-img{
   cursor: pointer;
-  margin-left: 1.75rem;
+  margin-left: 1.8rem;
 }
 .create-post .post-pic{
   color: white;
