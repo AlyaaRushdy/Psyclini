@@ -2095,6 +2095,7 @@ footer ul li{
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
 
+
 .disp-inline{
   display: inline !important;
 }
@@ -2140,7 +2141,5 @@ footer ul li{
 .doctor-portfolio .doctors-dep-link:hover{
   color: #7c4dff;
 }
-
-
 
 /*# sourceMappingURL=home_style.css.map */
