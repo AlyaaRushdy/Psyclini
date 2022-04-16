@@ -2032,6 +2032,7 @@ footer ul li{
   border-radius: .5rem;
   padding: 1.2rem 1rem 1.2rem .75rem !important;
   height: auto;
+  margin-bottom: 1rem;
 }
 
 .doctors-sidebar .list-unstyled{
@@ -2141,5 +2142,36 @@ footer ul li{
 .doctor-portfolio .doctors-dep-link:hover{
   color: #7c4dff;
 }
+.doctor-portfolio .doctor-inner-box{
+  background-color: #fff;
+  padding: 1.25rem !important;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+.doctor-portfolio .col-lg-4{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.doctor-portfolio img{
+  min-block-size: 15rem;
+}
+@media(min-width : 562px) and (max-width : 779px){
+  .doctor-portfolio img{
+    min-block-size: 14rem;
+  }
+}
+@media(min-width : 780px) and (max-width : 991px){
+  .doctor-portfolio img{
+    min-block-size: 19rem;
+  }
+}
+@media(min-width : 992px) and (max-width : 1199px){
+  .doctor-portfolio img{
+    min-block-size: 12rem;
+  }
+}
+
+
+
 
 /*# sourceMappingURL=home_style.css.map */
