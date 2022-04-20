@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../css/signin_signup_style.css">
         <link rel="stylesheet" href="../css/home_style.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
         <link rel="icon" href="../img/icon.png">
     </head>
 	<body>
@@ -74,21 +75,24 @@
                                         </div>
                                         <div class="form-group mt-3">
                                             <input type="text" class="form-control" required>
-                                            <label class="form-control-placeholder" for="Username" >Username</label>
+                                            <label class="form-control-placeholder" for="Firstname" >Name</label>
                                         </div>
                                         <div class="form-group mt-3">
-                                            <input type="text" class="form-control" required>
-                                            <label class="form-control-placeholder" for="Firstname" >First Name</label>
+                                            <select class="form-control" id="gender-select">
+                                                <option value="gender-selected" name="gender" disabled selected>Gender</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
                                         </div>
                                         <div class="form-group mt-3">
-                                            <input type="text" class="form-control" required>
-                                            <label class="form-control-placeholder" for="Lastname" >Last Name</label>
+                                            <input type="text" class="form-control" name="dob" onfocus="(this.type='date')" onblur="(this.type='text')"required>
+                                            <label class="form-control-placeholder" for="dob">Date of Birth</label>
                                         </div>
                                         <div class="form-group mt-3">
                                             <input type="tel" class="form-control" name="phone" required>
                                             <label class="form-control-placeholder" for="phone">Phone Number</label>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group mt-3">
                                             <input id="password-field" type="password" class="form-control" required>
                                             <label class="form-control-placeholder" for="password">Password</label>
                                             <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
@@ -130,8 +134,9 @@
         </div>
 
         <script src="../js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/main.js"></script>
+        <script src="../js/singin_signup.js"></script>
 	</body>
 </html>
 
