@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psyclini ADMIN</title>
+    
+    <link rel="stylesheet" href="../css/admin_bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/admin main style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="sidebar" class="active">
+      <div class="sidebar-wrapper active">
+        <div class="sidebar-header">
+          <div class="d-flex justify-content-between">
+            <div class="logo">
+              <a href="ADMIN index.html"><img src="../img/logo.png" alt="Logo" srcset=""></a>
+            </div>
+            <div class="toggler">
+              <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-menu">
+          <ul class="menu">            
+            <li class="sidebar-item active ">
+              <a href="ADMIN index.html" class='sidebar-link'>
+                <i class="bi icofont-calendar bi-grid-fill"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+              
+            <li class="sidebar-item has-sub">
+              <a href="#" class='sidebar-link'>
+                <i class="bi bi-stack"></i>
+                <span>Appointments Moderation</span>
+              </a>
+              <ul class="submenu ">
+                <li class="submenu-item ">
+                  <a href="component-alert.html">Add</a>
+                </li>
+                <li class="submenu-item ">
+                  <a href="component-badge.html">Change</a>
+                </li>
+                <li class="submenu-item ">
+                  <a href="component-breadcrumb.html">Cancle</a>
+                </li>
+                <li class="submenu-item ">
+                  <a href="component-button.html">Doctor's Requests</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="sidebar-item has-sub">
+              <a href="#" class='sidebar-link'>
+                <i class="bi bi-collection-fill"></i>
+                <span>Approve</span>
+              </a>
+              <ul class="submenu ">
+                <li class="submenu-item ">
+                  <a href="extra-component-avatar.html">Post</a>
+                </li>
+                <li class="submenu-item ">
+                  <a href="extra-component-sweetalert.html">Article</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="sidebar-item has-sub">
+              <a href="#" class='sidebar-link'>
+                <i class="bi bi-collection-fill"></i>
+                <span>Publish</span>
+              </a>
+              <ul class="submenu ">
+                <li class="submenu-item ">
+                  <a href="extra-component-avatar.html">Post</a>
+                </li>
+                <li class="submenu-item ">
+                  <a href="extra-component-sweetalert.html">Article</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-title mb-5"><a href="ADMIN CreateDoctorsAccount.html"> Create Doctor's Account</a></li>
+          </ul>           
+        </div>
+        <button class="sidebar-toggler btn x"><i class="icofont-calendar xl" data-feather="x"></i></button>
+      </div>
+    </div>
+    
+    <div id="main">
+      <header class="mb-3">
+        <a href="#" class="burger-btn d-block d-xl-none">
+          <i class="bi bi-justify fs-3"></i>
+        </a>
+      </header>
+      <div class="page-heading">
+        <h3>Welcome Back!</h3>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="../js/bootstrap.bundle.js"></script> 
+  <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+  <script src="assets/js/pages/dashboard.js"></script>
+  <script src="../js/admin main script.js"></script>
+</body>
+
+</html>
