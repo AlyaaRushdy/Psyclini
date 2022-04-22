@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psyclini ADMIN</title>
-    
-    <link rel="stylesheet" href="../css/admin_bootstrap.css">
-    <link rel="stylesheet" href="../css/icofont.css">
-    <link rel="stylesheet" href="../css/admin main style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psyclini ADMIN/index</title>
+  
+  <link rel="stylesheet" href="../css/admin_bootstrap.css">
+  <link rel="stylesheet" href="../css/icofont.css">
+  <link rel="stylesheet" href="../css/admin main style.css">
+  <link rel="icon" href="../img/icon.png">
 </head>
 
 <body>
   <div id="app">
-    <div id="sidebar" class="active">
+    <div id="sidebar" class="active ">
       <div class="sidebar-wrapper active">
         <div class="sidebar-header">
           <div class="d-flex justify-content-between">
@@ -35,8 +36,7 @@
               
             <li class="sidebar-item has-sub">
               <a href="#" class='sidebar-link'>
-                <i class="bi bi-stack"></i>
-                <span>Appointments Moderation</span>
+                <span>Appointments</span>
               </a>
               <ul class="submenu ">
                 <li class="submenu-item ">
@@ -46,59 +46,49 @@
                   <a href="component-badge.html">Change</a>
                 </li>
                 <li class="submenu-item ">
-                  <a href="component-breadcrumb.html">Cancle</a>
-                </li>
-                <li class="submenu-item ">
-                  <a href="component-button.html">Doctors' Requests</a>
+                  <a href="component-breadcrumb.html">Cancel</a>
                 </li>
               </ul>
             </li>
             
             <li class="sidebar-item has-sub">
               <a href="#" class='sidebar-link'>
-                <i class="bi bi-collection-fill"></i>
                 <span>Approve</span>
               </a>
               <ul class="submenu ">
                 <li class="submenu-item ">
-                  <a href="extra-component-avatar.html">Post</a>
+                  <a href="extra-component-avatar.html">Posts</a>
                 </li>
                 <li class="submenu-item ">
-                  <a href="extra-component-sweetalert.html">Article</a>
+                  <a href="extra-component-sweetalert.html">Doctors' Requests</a>
                 </li>
               </ul>
             </li>
             
-            <li class="sidebar-item has-sub">
-              <a href="#" class='sidebar-link'>
-                <i class="bi bi-collection-fill"></i>
-                <span>Publish</span>
+            <li class="sidebar-item mb-5 ">
+              <a href="ADMIN CreateDoctorsAccount.html" class="sidebar-link"> 
+                <span>Create Doctor's Account</span>
               </a>
-              <ul class="submenu ">
-                <li class="submenu-item ">
-                  <a href="extra-component-avatar.html">Post</a>
-                </li>
-                <li class="submenu-item ">
-                  <a href="extra-component-sweetalert.html">Article</a>
-                </li>
-              </ul>
             </li>
-            <li class="sidebar-title mb-5"><a href="ADMIN CreateDoctorsAccount.html"> Create Doctor's Account</a></li>
+
           </ul>           
         </div>
-        <button class="sidebar-toggler btn x"><i class="icofont-calendar" data-feather="x"></i></button>
       </div>
     </div>
     
     <div id="main">
-      
-      <div class="mt-3 page-heading">
-        <h3 class="dark-blue-title">Welcome Back!</h3>
-      </div>
+
+      <header class="mb-4">
+        <a href="#" class="burger-btn d-block d-xl-none"><i class="icofont-navigation-menu fs-3"></i></a>
+      </header>
 
       <div class="container">
+        <div class="mt-3 page-heading">
+          <h3 class="dark-blue-title">Welcome Back!</h3>
+        </div>
+
         <!-- DataTales Example -->
-        <div class="card shadow mb-4">
+        <div class="card shadow mb-4 ml-5">
           <div class="card-body">
             <h4 class="mb-3 mt-3">Today <p id="date" class="disp-inline"></p> Appointments</h4>
             <div class="table-responsive tableFixHead">
