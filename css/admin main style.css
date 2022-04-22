@@ -7,3 +7,22 @@
 .black-title{
     color: #222 !important;
 }
+thead {
+    color: #435ebe !important;
+    position: sticky !important;
+    top: 0 !important;
+    background-color: #fff;
+}
+.table td{
+    color: #212529;
+}
+.tableFixHead { 
+    overflow-y: auto; 
+    height: 23rem;
+}
+.disp-inline{
+    display: inline;
+}
+#date{
+    padding: 0 .25rem !important;
+}
