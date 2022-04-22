@@ -29,8 +29,23 @@ thead {
 #date{
     padding: 0 .25rem !important;
 }
+.mr-2{
+    margin-right: .5rem !important;
+}
 .ml-5{
     margin-left: 3rem !important;
+}
+.pl-5{
+    padding-left: 3rem !important;
+}
+.pl-4{
+    padding-left: 2rem !important;
+}
+.pl-3{
+    padding-left: 1.5rem !important;
+}
+.pr-3{
+    padding-right: 1.5rem !important;
 }
 .post-btn{
     padding: .5rem !important;
@@ -42,4 +57,10 @@ thead {
 }
 .create-post-title{
     margin-left: -1rem !important;
+}
+.article-form label{
+    color: #212529;
+}
+.article-form .btn{
+    width: 25% !important;
 }
