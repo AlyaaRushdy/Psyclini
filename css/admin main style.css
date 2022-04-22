@@ -63,4 +63,6 @@ thead {
 }
 .article-form .btn{
     width: 25% !important;
+    font-weight: 600;
+    padding: .5rem !important;
 }
