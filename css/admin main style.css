@@ -32,3 +32,14 @@ thead {
 .ml-5{
     margin-left: 3rem !important;
 }
+.post-btn{
+    padding: .5rem !important;
+}
+.post-dep-dropdown{
+    display: inline;
+    margin-right: 5rem ;
+    color: #222;
+}
+.create-post-title{
+    margin-left: -1rem !important;
+}
