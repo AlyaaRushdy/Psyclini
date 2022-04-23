@@ -18,7 +18,7 @@ thead {
 }
 .tableFixHead { 
     overflow-y: auto; 
-    height: 20rem;
+    height: 22rem;
 }
 .disp-inline{
     display: inline;
@@ -65,4 +65,38 @@ thead {
     width: 25% !important;
     font-weight: 600;
     padding: .5rem !important;
+}
+.req-pending {
+    color: #ff8400 !important;
+}
+.req-accepted {
+    color: #33ae10 !important;
+}
+.req-rejected {
+    color: red !important;
+}
+.my-w{
+    max-width: 7rem !important;
+}
+.req-mod label{
+    color: #222;
+    font-weight: 500 ;
+    font-size: 1.25rem;
+}
+.req-mod .title{
+    margin-left: -1.5rem !important;
+}
+.form-floating .form-control{
+    color: #000;
+}
+.req-mod .btn{
+    padding: .5rem 1.4rem !important;
+    border-radius: .25rem !important;
+    font-size: 1.1rem ;
+    margin: .75rem 0;
+    margin-right: -3.5rem;
+    font-weight: 500;
+}
+.text-right{
+    text-align: right;
 }
