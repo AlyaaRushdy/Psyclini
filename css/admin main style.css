@@ -18,7 +18,7 @@ thead {
 }
 .tableFixHead { 
     overflow-y: auto; 
-    height: 20rem;
+    height: 22rem;
 }
 .disp-inline{
     display: inline;
@@ -65,4 +65,16 @@ thead {
     width: 25% !important;
     font-weight: 600;
     padding: .5rem !important;
+}
+.req-pending {
+    color: #ff8400 !important;
+}
+.req-accepted {
+    color: #33ae10 !important;
+}
+.req-rejected {
+    color: red !important;
+}
+.my-w{
+    max-width: 7rem !important;
 }
