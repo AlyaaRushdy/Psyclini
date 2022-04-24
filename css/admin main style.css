@@ -100,3 +100,16 @@ thead {
 .text-right{
     text-align: right;
 }
+.approve-btn{
+    background-color: #33ae10 !important;
+}
+.disapprove-btn{
+    background-color: red !important;
+}
+.admin-approve-posts img{
+    width: 25rem;
+    height: 20rem;
+}
+#main .page-heading{
+    margin-left: -1rem;
+}
