@@ -106,4 +106,10 @@ thead {
 .disapprove-btn{
     background-color: red !important;
 }
-
+.admin-approve-posts img{
+    width: 25rem;
+    height: 20rem;
+}
+#main .page-heading{
+    margin-left: -1rem;
+}
