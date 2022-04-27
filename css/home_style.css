@@ -2239,6 +2239,8 @@ footer ul li{
   font-size: .9rem !important;
   background-color: #4d77ff !important;
   padding: .5rem 1.1rem !important;
+  border-radius: 15px;
+  font-weight: 600;
 }
 .doctor-portfolio .btn:hover{
   background-color: #0056b3 !important;
