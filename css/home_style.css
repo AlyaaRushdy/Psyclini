@@ -2613,7 +2613,29 @@ footer ul li{
   font-size: 18px;
   margin-bottom: 2px
 }
+.blue-title{
+  color: #4d77ff;
+}
+.bold{
+  font-weight: 500;
+}
 
+.game-wrap label{
+  font-size: 1.15rem;
+}
+
+.square{
+  width: 10rem ;
+  height: 10rem;
+  border: #000 solid 1px;
+  background-color: transparent;
+}
+
+.mole{
+  background-image: url(../img/mole.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*.game-wrap{
   min-height: 20rem !important;
