@@ -8373,3 +8373,7 @@ h1, h2, h3, h4, h5,
 .signin-form .rounded-pill, .signup-form .rounded-pill{
   line-height: 1 !important;
 }
+
+.login-wrap p{
+  margin-bottom: 0;
+}
