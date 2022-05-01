@@ -387,9 +387,6 @@ a:focus {
   display: none !important;
 }
 
-.navbar-brand {
-  margin-top: 10px;
-}
 @media (min-width: 992px) and (max-width : 1199px){
   #navbarmain .dropdown{
     display: none !important;
@@ -412,6 +409,15 @@ a:focus {
   border: 0px;
   border-top: 5px solid #7C4DFF;
   border-radius: 0px;
+}
+@media (min-width: 992px) {
+  .dropdown .dropdown-menu{
+    margin-top: -1rem;
+  }
+  .navbar-brand {
+    padding-top: 0 !important;
+    
+  }
 }
 
 .dropdown:hover .dropdown-menu {
@@ -2636,6 +2642,15 @@ footer ul li{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.user-dropdown{
+  margin-top: -.75rem;
+}
+.user-dropdown img{
+  border: solid #4d77ff 2px;
+  border-radius: 30px;
+}
+
 
 /*.game-wrap{
   min-height: 20rem !important;
