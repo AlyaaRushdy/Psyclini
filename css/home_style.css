@@ -416,7 +416,11 @@ a:focus {
   }
   .navbar-brand {
     padding-top: 0 !important;
-    
+  }
+}
+@media (max-width: 991px){
+  .navbar-brand{
+    margin-top: .5rem ;
   }
 }
 
