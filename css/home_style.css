@@ -412,7 +412,7 @@ a:focus {
 }
 @media (min-width: 992px) {
   .dropdown .dropdown-menu{
-    margin-top: -1rem;
+    margin-top: -.25rem !important;
   }
   .navbar-brand {
     padding-top: 0 !important;
@@ -2648,13 +2648,14 @@ footer ul li{
 }
 
 .user-dropdown{
-  margin-top: -.75rem;
+  margin-top: -1rem !important;
 }
 .user-dropdown img{
   border: solid #4d77ff 2px;
   border-radius: 30px;
 }
-
+.user-dropdown ul{
+}
 
 /*.game-wrap{
   min-height: 20rem !important;
