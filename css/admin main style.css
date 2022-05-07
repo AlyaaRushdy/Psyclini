@@ -32,8 +32,14 @@ thead {
 .mr-2{
     margin-right: .5rem !important;
 }
+.mr-5{
+    margin-right: 3rem !important;
+}
 .ml-5{
     margin-left: 3rem !important;
+}
+.ml-3{
+    margin-left: 1.5rem !important;
 }
 .pl-5{
     padding-left: 3rem !important;
@@ -46,6 +52,9 @@ thead {
 }
 .pr-3{
     padding-right: 1.5rem !important;
+}
+.pb-2{
+    padding-bottom: .5rem !important;
 }
 .post-btn{
     padding: .5rem !important;
@@ -94,7 +103,7 @@ thead {
     border-radius: .25rem !important;
     font-size: 1.1rem ;
     margin: .75rem 0;
-    margin-right: -3.5rem;
+    /*margin-right: -3.5rem;*/
     font-weight: 500;
 }
 .text-right{
