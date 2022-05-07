@@ -391,6 +391,9 @@ a:focus {
   #navbarmain .dropdown{
     display: none !important;
   }
+  #navbarmain .user-dropdown{
+    display: inline !important;
+  }
 }
 
 .dropdown .dropdown-menu {
