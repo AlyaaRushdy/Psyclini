@@ -387,12 +387,12 @@ a:focus {
   display: none !important;
 }
 
-.navbar-brand {
-  margin-top: 10px;
-}
 @media (min-width: 992px) and (max-width : 1199px){
   #navbarmain .dropdown{
     display: none !important;
+  }
+  #navbarmain .user-dropdown{
+    display: inline !important;
   }
 }
 
@@ -412,6 +412,19 @@ a:focus {
   border: 0px;
   border-top: 5px solid #7C4DFF;
   border-radius: 0px;
+}
+@media (min-width: 992px) {
+  .dropdown .dropdown-menu{
+    margin-top: -.25rem !important;
+  }
+  .navbar-brand {
+    padding-top: 0 !important;
+  }
+}
+@media (max-width: 991px){
+  .navbar-brand{
+    margin-top: .5rem ;
+  }
 }
 
 .dropdown:hover .dropdown-menu {
@@ -2091,9 +2104,10 @@ footer ul li{
 
 .doctors-sidebar{
   border-radius: .5rem;
-  padding: 1.2rem 1rem 1.2rem .75rem !important;
-  height: auto;
+  padding: 1rem 1rem .5rem .75rem !important;
   margin-bottom: 1rem;
+  overflow-y: auto;
+  height: 58vh;
 }
 
 .doctors-sidebar .list-unstyled{
@@ -2215,8 +2229,12 @@ footer ul li{
   color: #7c4dff;
 }
 .doctor-portfolio .doctor-inner-box{
-  padding: 1rem !important;
-  padding-bottom: .75rem !important ;
+  /*padding: 1rem !important;
+  padding-bottom: .75rem !important ;*/
+  background-color: #fff;
+  padding: 1.25rem !important;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
 }
 .doctor-full{
   background-color: #fff;
@@ -2227,16 +2245,15 @@ footer ul li{
 }
 
 .doctor-portfolio .col-lg-4{
-  padding-right: 5px;
-  padding-left: 5px;
-  max-width: 32% !important;
+  padding-right: .3rem;
+  padding-left: .3rem;
 }
 .doctor-portfolio img{
   min-block-size: 15rem;
 }
 .doctor-portfolio .btn{
   color: white !important;
-  font-size: .9rem !important;
+  font-size: 1rem !important;
   background-color: #4d77ff !important;
   padding: .5rem 1.1rem !important;
   border-radius: 15px;
@@ -2635,6 +2652,16 @@ footer ul li{
   background-image: url(../img/mole.png) ;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.user-dropdown{
+  margin-top: -1rem !important;
+}
+.user-dropdown img{
+  border: solid #4d77ff 2px;
+  border-radius: 30px;
+}
+.user-dropdown ul{
 }
 
 /*.game-wrap{

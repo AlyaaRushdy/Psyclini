@@ -2270,12 +2270,12 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
 
 .btn-outline-primary {
-  color: #4D77FF;
-  border-color: #4D77FF; }
+  color: #4D77FF !important;
+  border-color: #4D77FF !important; }
   .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #4D77FF;
-    border-color: #4D77FF; }
+    color: #fff !important;
+    background-color: #4D77FF !important;
+    border-color: #4D77FF !important; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
@@ -8168,7 +8168,7 @@ h1, h2, h3, h4, h5,
   background: #4D77FF !important; }
 
 .ftco-section {
-  padding: 7em 0; }
+  padding: 3rem 0; }
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -8373,3 +8373,20 @@ h1, h2, h3, h4, h5,
 .signin-form .rounded-pill, .signup-form .rounded-pill{
   line-height: 1 !important;
 }
+
+.login-wrap p{
+  margin-bottom: 0;
+}
+
+.text-helper{
+  font-size: .8rem;
+}
+
+.profile-pic input{
+  color: white;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
