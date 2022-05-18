@@ -136,3 +136,8 @@ thead {
 .form-select {
     color: #222 !important;
 }
+.log-out{
+    position: absolute !important;
+    bottom: 1.5rem;
+    margin-left: 4rem;
+}
