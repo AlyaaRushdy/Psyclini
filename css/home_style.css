@@ -2642,8 +2642,8 @@ footer ul li{
 }
 
 .square{
-  width: 10rem ;
-  height: 10rem;
+  width: 33%;
+  aspect-ratio: 1 / 1;
   border: #000 solid 1px;
   background-color: transparent;
 }
@@ -2661,8 +2661,11 @@ footer ul li{
   border: solid #4d77ff 2px;
   border-radius: 30px;
 }
-.user-dropdown ul{
+.settings-section h4{
+  color: #4d77ff
 }
+
+
 
 /*.game-wrap{
   min-height: 20rem !important;
