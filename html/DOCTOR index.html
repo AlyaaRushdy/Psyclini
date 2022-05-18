@@ -68,6 +68,9 @@
                 <span>Go to the Main Website <i class="icofont-simple-right"></i></span>
               </a>
             </li>
+            <li class="sidebar-item log-out ">
+              <a href="#" class="text-muted">Log Out</a>
+            </li>
             
           </ul>           
         </div>
@@ -91,10 +94,10 @@
           <div class="card-body">
             <h4 class="mb-3 mt-2 pb-2">Your Appointments This Week</h4>
             <div class="table-responsive ">
-              <table class="table" id="table1">
+              <table class="table table1" id="table1">
                 <thead> 
                   <tr class="justify-content-between">
-                    <th>Patient's Name</th>
+                    <th class="nosort">Patient's Name</th>
                     <th>Date</th>
                     <th>From</th>
                     <th>To</th>
@@ -117,91 +120,91 @@
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Alyaa Ahmed</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Alyaa Ahmed</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Alyaa Ahmed</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Alyaa Ahmed</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Alyaa Ahmed</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Marwa Yousser</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Marwa Yousser</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Marwa Yousser</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Marwa Yousser</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Mohammed Eid</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Mohammed Eid</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Mohammed Eid</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>Sahar Khaled</td>
+                    <td>Mohammed Eid</td>
                     <td>13/4/2022</td>
                     <td>10:00 </td>
                     <td>10:30 </td>
@@ -225,7 +228,11 @@
   <script>
     // Simple Datatable
     let table1 = document.querySelector('#table1');
-    let dataTable = new simpleDatatables.DataTable(table1);
+    let dataTable = new simpleDatatables.DataTable(table1, {
+      columns: [
+        { select: 2, sortable: false }
+      ]
+    });
   </script>
 </body>
 

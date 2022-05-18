@@ -2,7 +2,7 @@ $( document ).ready(function() {
     $('.appt_time').timepicker({
     timeFormat: 'h:i A',
     minTime: '10:00am',
-    maxTime: '10:00pm',
+    maxTime: '9:00pm',
     step: 60, 
     disableTimeRanges: [['3:00pm', '5:00pm']],
     disableTextInput: true,
