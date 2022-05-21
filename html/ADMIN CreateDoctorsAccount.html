@@ -96,23 +96,23 @@
           <h4 class="mb-4 pt-3 dark-blue-title">Create Doctor's Account</h4>
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder="John Doe">
-            <label for="floatingInput">Name</label>
+            <label for="floatingInput" class="required">Name</label>
           </div>
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" placeholder=".">
-            <label for="floatingInput">Social Security Number</label>
+            <label for="floatingInput" class="required">Social Security Number</label>
           </div>
           <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <label for="floatingInput" class="required">Email address</label>
           </div>
           <div class="form-floating mb-3">
             <input type="tel" class="form-control" id="floatingInput" placeholder="012 3456 7890">
-            <label for="floatingInput">Phone Number</label>
+            <label for="floatingInput" class="required">Phone Number</label>
           </div>          
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="." onfocus="(this.type='date')" onblur="(this.type='text')"required>
-            <label for="floatingInput">Date of Birth</label>
+            <input type="text" class="form-control dob_max" id="floatingInput" placeholder="." onfocus="(this.type='date')" onblur="(this.type='text')"required>
+            <label for="floatingInput" class="required">Date of Birth</label>
           </div>
           <div class="form-floating mb-3">
             <select class="form-select black-title" id="floatingSelect" aria-label="Floating label select example">
@@ -125,11 +125,11 @@
               <option class="op" value="addiction">Addiction</option>
               <option class="op" value="life_coach">Life Coach</option>
             </select>
-            <label for="floatingSelect">Department</label>
+            <label for="floatingSelect" class="required">Department</label>
           </div>
           <div class="form-floating mb-4">
             <input type="password" class="form-control" id="floatingPassword" placeholder="********">
-            <label for="floatingPassword">Password</label>
+            <label for="floatingPassword" class="required">Password</label>
           </div>
           <div class="form-floating mb-3 pt-1">
             <input type="file" class="form-control p-custom " id="floatingImg" accept="image/*" >
@@ -145,7 +145,6 @@
 
   <script src="../js/bootstrap.bundle.js"></script>
   <script src="../js/admin main script.js"></script>
+  <script src="../js/date.js"></script>
 </body>
 </html>
-
-

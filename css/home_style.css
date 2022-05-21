@@ -2664,9 +2664,13 @@ footer ul li{
 .settings-section h4{
   color: #4d77ff
 }
-
-
-
+.red-color{
+  color: red !important;
+}
+.required:after {
+  content:" *";
+  color: red;
+}
 /*.game-wrap{
   min-height: 20rem !important;
 }*/
