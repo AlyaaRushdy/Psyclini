@@ -24,6 +24,5 @@ dob_max_year_classes.forEach((dob_max) => {
     dob_max.setAttribute('max', yyyy - 20 +'-'+mm+'-'+dd);
 });
 
-document.getElementsByClassName('dob_max').setAttribute('max', today_rev);
 document.getElementById('date').innerText = today;
 
