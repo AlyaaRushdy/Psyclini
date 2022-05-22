@@ -46,7 +46,9 @@ h6, .h6 {
 p {
   line-height: 30px;
 }
-
+.fw-normal{
+  font-weight: normal !important;
+}
 .navbar-toggle .icon-bar {
   background: #223a66;
 }
@@ -1811,12 +1813,17 @@ a:focus {
   padding-top: 20px;
 }
 .dep p{
-  padding-left: 3%;
+  padding-left: 2%;
   margin-bottom: 15px;
   font-size: 18px !important;
 }
+.dep p.ar{
+  padding-left: 0%;
+  padding-right: 2%;
+}
 .dep .ar{
   direction: rtl;
+  text-align: right;
 }
 .font-large-p{
   font-size: large;
@@ -2206,9 +2213,11 @@ footer ul li{
 { color: #ffca08 ;  } /* Set yellow color when star hover */
 
 .doctor-page .rating{
-  margin-top: .25rem !important;
+  margin-top: 0rem !important;
   font-size: 1.35rem;
+  padding-left: 2rem !important;
 }
+
 .full-star{
   color: #ffca08 !important ;
 }
