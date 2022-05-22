@@ -1901,8 +1901,9 @@ a:focus {
   font-size: 1rem;
 }
 .appointment-fees i{
-  color: #4d77ff;
+  color: #7c4dff;
   padding-right: 1;
+  padding-right: .5rem;
 }
 .doctor-title{
   margin-bottom: .5rem !important;
@@ -2601,9 +2602,7 @@ footer ul li{
 .ver-divider{
   padding: 0 .5rem !important;
 }
-.appointment-fees i{
-  padding-right: .5rem;
-}
+
 .book-button{
   margin-top: .75rem;
 }
@@ -2686,38 +2685,46 @@ footer ul li{
 .book-appt .col-lg-4{
   padding: 0;
 }
-.book-appointment .border{
-  border: #7C4DFF solid 2px;
-  border-bottom: none;
-  border-radius: 1rem;
-}
 .book-appt .appt-day{
-  padding: 1rem;
+  padding: .5rem;
   color: #7c4dff;
   font-size: large;
+  margin: 0;
+  line-height: 2rem;
 }
 .book-appt .single-appt{
-  padding: 1rem .5rem ;
-  border: #000 solid 2px;
-  border-bottom: none;
+  padding: 1rem 0rem ;
   cursor: pointer !important;
 }
-.book-appt .single-appt:last-child{
-  border-bottom: #000 solid 2px;
+.single-appt input[type="radio"]{
+  display: none;
 }
-.book-appt .single-appt label{
-  margin: 0;
-  cursor: pointer;
+.single-appt span{
+  padding: 1rem 1.2rem;
 }
-.single-appt > input {display: none;}  /* Remove radio buttons */
-
-.single-appt > input:checked ~ label{
-   color: #ffca08 ; 
-   background-color: #4d77ff;
-  } /* Set yellow color when star checked */
-.single-appt > input:hover ~ label{
-   color: #7C4DFF ;  
-  } /* Set yellow color when star hover */
+.single-appt:hover span {
+  background: #7c4dff;
+  color: #fff;
+}
+.single-appt input:checked + span {
+  background: #7c4dff;
+  color: #fff;
+}
+.appts-details .col-lg-11{
+  padding: 0;
+}
+.appt-booked{
+  background-color: rgba(77, 119, 255, .75) !important;
+  color: #fff;
+}
+.appt-booked:hover  span {
+  background-color: rgba(77, 119, 255, 0) !important;
+  color: #fff;
+}
+.appt-booked input:checked + span {
+  background-color: rgba(77, 119, 255, 0) !important;
+  color: #fff;
+}
 
 /*.game-wrap{
   min-height: 20rem !important;
