@@ -2671,6 +2671,45 @@ footer ul li{
   content:" *";
   color: red;
 }
+.text-align-center{
+  text-align: -moz-center !important;
+}
+.book-appt .col-lg-4{
+  padding: 0;
+}
+.book-appointment .border{
+  border: #7C4DFF solid 2px;
+  border-bottom: none;
+  border-radius: 1rem;
+}
+.book-appt .appt-day{
+  padding: 1rem;
+  color: #7c4dff;
+  font-size: large;
+}
+.book-appt .single-appt{
+  padding: 1rem .5rem ;
+  border: #000 solid 2px;
+  border-bottom: none;
+  cursor: pointer !important;
+}
+.book-appt .single-appt:last-child{
+  border-bottom: #000 solid 2px;
+}
+.book-appt .single-appt label{
+  margin: 0;
+  cursor: pointer;
+}
+.single-appt > input {display: none;}  /* Remove radio buttons */
+
+.single-appt > input:checked ~ label{
+   color: #ffca08 ; 
+   background-color: #4d77ff;
+  } /* Set yellow color when star checked */
+.single-appt > input:hover ~ label{
+   color: #7C4DFF ;  
+  } /* Set yellow color when star hover */
+
 /*.game-wrap{
   min-height: 20rem !important;
 }*/
