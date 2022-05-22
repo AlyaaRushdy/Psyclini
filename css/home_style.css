@@ -1710,6 +1710,7 @@ a:focus {
 }
 .dir-rtl{
   direction: rtl;
+  text-align: right;
 }
 
 .testimonial-block a{
@@ -2681,6 +2682,8 @@ footer ul li{
 }
 .text-align-center{
   text-align: -moz-center !important;
+  text-align: -webkit-center;
+
 }
 .book-appt .col-lg-4{
   padding: 0;
@@ -2690,6 +2693,7 @@ footer ul li{
   color: #7c4dff;
   font-size: large;
   margin: 0;
+  margin-bottom: .25rem;
   line-height: 2rem;
 }
 .book-appt .single-appt{
