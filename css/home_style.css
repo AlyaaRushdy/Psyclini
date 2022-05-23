@@ -2640,7 +2640,7 @@ footer ul li{
   margin-bottom: 2px
 }
 .blue-title{
-  color: #4d77ff;
+  color: #4d77ff !important;
 }
 .bold{
   font-weight: 500;
@@ -2729,7 +2729,9 @@ footer ul li{
   background-color: rgba(77, 119, 255, 0) !important;
   color: #fff;
 }
-
+.user-table .table td, .table th{
+  vertical-align: middle;
+}
 /*.game-wrap{
   min-height: 20rem !important;
 }*/
