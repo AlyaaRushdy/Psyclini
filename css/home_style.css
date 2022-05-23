@@ -2141,10 +2141,11 @@ footer ul li{
 .btn-toggle:hover,
 .btn-toggle:focus {
   color: #fff !important;
-  background-color: #4d77ff;
+  background-color: #4d77ff !important;
 }
 .btn-toggle[aria-expanded="true"] {
-  color: #4d77ff;
+  color: #fff !important;
+  background-color: #4d77ff !important;
 }
 
 .btn-toggle-nav .sidebar-subitem {
@@ -2731,6 +2732,14 @@ footer ul li{
 }
 .user-table .table td, .table th{
   vertical-align: middle;
+}
+.user-history .feature-item{
+  padding: 1.75rem !important;
+  margin: 0;
+}
+.user-history button{
+  font-size: large !important;
+  font-weight: 500 !important;
 }
 /*.game-wrap{
   min-height: 20rem !important;
