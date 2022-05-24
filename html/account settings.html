@@ -5,12 +5,11 @@
     <link rel="stylesheet" href="../css/home_style.css">
     <link rel="stylesheet" href="../css/icofont.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-     
     <link rel="icon" href="../img/icon.png">
-    <title>Psyclini</title>
+    <title>Account Settings - Psyclini</title>
     
 </head>
-<body id="bootstrap-overrides top">
+<body>
   
   <!--nav bar begin-->
   <header>
@@ -47,7 +46,15 @@
             <li class="nav-item"><a class="nav-link" href="tests.html">Tests</a></li>
             <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>      
             <li class="nav-item"><a class="nav-link" href="index.html#contact-us">Contact Us</a></li>
-            <a class="btn btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="Sign In.html">Sign In</a>
+            <li class="nav-item dropdown user-dropdown">
+              <a class="nav-link dropdown-toggle"  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><img src="../img/mole.png" width="50" height="50" alt=""></span></a>
+              <ul class="dropdown-menu " aria-labelledby="dropdown03">
+                <li><a class="dropdown-item" href="history.html">History</a></li>
+                <li><a class="dropdown-item" href="upcoming appointments.html">Upcoming Appointments</a></li>
+                <li><a class="dropdown-item" href="account settings.html">Account Settings</a></li>
+                <li><a class="dropdown-item text-muted" href="#">Log Out</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -55,16 +62,49 @@
   </header>
   <!--nav bar End-->
 
-  
+  <section class="section settings-section">
+    <div class="container">
+      <div class="feature-item">
+        <h4 class="d-block">Settings </h4>
+        <div class="border-top w-75 "></div>
+        <div class="row">
+          <div class="col-lg-8 pt-4"><!--profile data-->
+            <form action="">
+              <div class="row pl-3">
+                <div class="col-lg-3 pb-2 ">
+                  <label class=""> Name : </label>
+                </div>
+                <div class="col-lg-9 pb-4 ">
+                  <input type="text" class="w-100" placeholder="Amal Mohammed">
+                </div>
+                <div class="col-lg-3 pb-2 ">
+                  <label class=""> E-mail : </label>
+                </div>
+                <div class="col-lg-9 pb-4 ">
+                  <input type="email" name="email" class="w-100" placeholder="amalmohammed80@gmail.com">
+                </div>
+                
+                <div class="col-lg-3 pb-2 ">
+                  <label class=""> Date of Birth : </label>
+                </div>
+                <div class="col-lg-9 pb-4 ">
+                  <input type="text" class="w-100" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="25/03/1980">
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          <div class="col-lg-4"><!--profile pic-->
+          </div>
 
-  <section class="section game-wrap">
-    <div class="container col-lg-6">
-
-
-
-
-   </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+ 
+
+ 
 
   <div class="container"><!--footer-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top my-footer">
@@ -87,14 +127,9 @@
 
 
 
-
-
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/script.js"></script>
-  <script src="../js/test1.js"></script> 
-
-
 </body>
 </html>
 
