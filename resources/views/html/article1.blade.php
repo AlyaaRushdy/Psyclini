@@ -26,7 +26,7 @@
                           <span class="text-black text-muted text-capitalize mr-3"><i class="icofont-calendar mr-2"></i> 28th January 2022</span>
                         </div> 
 
-                        <div lang="ar" dir="rtl">
+                        <div class="dir-rtl">
                           <h2 class="mb-4 text-md"><a href="article page.html">الوسواس القهري</a></h2>
                           <h3>المحتوي</h3>
                           <ul class="list-unstyled article-parag">
