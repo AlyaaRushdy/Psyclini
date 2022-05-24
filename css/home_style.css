@@ -2741,6 +2741,9 @@ footer ul li{
   font-size: large !important;
   font-weight: 500 !important;
 }
+.my-footer .bi-github:hover{
+  color: #4d77ff !important;
+}
 /*.game-wrap{
   min-height: 20rem !important;
 }*/
