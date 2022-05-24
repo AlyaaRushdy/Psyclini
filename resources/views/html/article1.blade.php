@@ -83,12 +83,7 @@
                           </ul>
                         </div>
 
-                        <div class="mt-5 clearfix">
-                          <ul class="float-left list-inline tag-option"> 
-                            <li class="list-inline-item"><a href="#">OCD</a></li>
-                            <li class="list-inline-item"><a href="#">Anxiety</a></li>
-                            <li class="list-inline-item"><a href="#">Neurodivergent</a></li>
-                          </ul>        
+                        <div class="mt-5 clearfix">    
                           <ul class="float-right list-inline">
                             <li class="list-inline-item"> Share: </li>
                             <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-facebook" aria-hidden="true"></i></a></li>

@@ -119,12 +119,7 @@
                             <li><a href="https://www.mayoclinic.org/diseases-conditions/social-anxiety-disorder/symptoms-causes/syc-20353561" target="_blank">Social phobia</a></li>
                           </ul>
                         </div>
-                        <div class="mt-5 clearfix">
-                          <ul class="float-left list-inline tag-option"> 
-                            <li class="list-inline-item"><a href="#">Schizophrenia</a></li>
-                            <li class="list-inline-item"><a href="#">Mental Disorders</a></li>
-                            <li class="list-inline-item"><a href="#">Hallucinations</a></li>
-                          </ul>        
+                        <div class="mt-5 clearfix">     
                           <ul class="float-right list-inline">
                             <li class="list-inline-item"> Share: </li>
                             <li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-facebook" aria-hidden="true"></i></a></li>
@@ -203,8 +198,7 @@
                         <span>(0)</span>
                       </li>                
                     </ul>
-                  </div>
-                  
+                  </div>                 
                    
                 </div>
               </div>
