@@ -25,13 +25,13 @@
                     <span class="text-black text-capitalize text-muted mr-3"><i class="icofont-calendar mr-1"></i> 28th January</span>
                   </div>
                   <div class="dir-rtl">
-                    <h2 class="mt-3 mb-3"><a href="article1.html">الوسواس القهري</a></h2>
+                    <h2 class="mt-3 mb-3"><a href="{{ route('article1') }}">الوسواس القهري</a></h2>
                     <p class="mb-4">هو أحد الاضطرابات النفسية العقلية التي قد تُصيب البعض و هو عبارة عن أفكار
                       و صور تدخل إلى عقل الإنسان بطريقة مكررة ويحاول جاهداً مقاومتها دون جدوى
                       و... 
                     </p>
                   </div>
-                  <a href="article1.html" target="_blank" class="btn btn-primary rounded-pill">Read More <i class="icofont-simple-right ml-2  "></i></a>
+                  <a href="{{ route('article1') }}" target="_blank" class="btn btn-primary rounded-pill">Read More <i class="icofont-simple-right ml-2  "></i></a>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@
               <h4>Popular Articles</h4>
               <div class="py-2">
                 <span class="text-sm text-muted">28 Jan 2022</span>
-                <h6 class="my-2"><a href="article1.html">الوسواس القهري</a></h6>
+                <h6 class="my-2"><a href="{{ route('article1') }}">الوسواس القهري</a></h6>
               </div>
 
               <div class="py-2">
