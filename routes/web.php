@@ -66,6 +66,10 @@ Route::get('article1' , function(){
     return view('html.article1');
 })->name('article1');
 
+Route::get('article3' , function(){
+    return view('html.article3');
+})->name('article3');
+
 Route::get('test' , function(){
     return view('html.test');
 });

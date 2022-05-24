@@ -66,10 +66,10 @@
                     <span class="text-black text-capitalize text-muted mr-3"><i class="icofont-calendar mr-1"></i> 28th January</span>
                   </div> 
                   <div class="dir-rtl">
-                  <h2 class="mt-3 mb-3"><a href="article3.html">طرق دعم مصاب الرهاب الاجتماعي</a></h2>
+                  <h2 class="mt-3 mb-3"><a href="{{ route('article3') }}">طرق دعم مصاب الرهاب الاجتماعي</a></h2>
                   <p class="mb-4">إن مسئولية دعم مصاب الرهاب الاجتماعي تقع بشكل أساسي على عاتق المقربين والأحباء، وفي هذا المقال سنتعرف على طرق فعالة لدعم مصاب الرهاب الاجتماعي، وكذلك بعض الطرق التي يمكن أن يعتمد عليها المصاب نفسه وتساعده في العلاج.</p>
                 </div>
-                  <a href="article3.html" target="_blank" class="btn btn-primary rounded-pill">Read More <i class="icofont-simple-right ml-2  "></i></a>
+                  <a href="{{ route('article3') }}" target="_blank" class="btn btn-primary rounded-pill">Read More <i class="icofont-simple-right ml-2  "></i></a>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@
 
               <div class="py-2">
                 <span class="text-sm text-muted">03 Mar 2018</span>
-                  <h6 class="my-2"><a href="article3.html">طرق دعم مصاب الرهاب الاجتماعي</a></h6>
+                  <h6 class="my-2"><a href="{{ route('article3') }}">طرق دعم مصاب الرهاب الاجتماعي</a></h6>
               </div>                       
             </div>
 
