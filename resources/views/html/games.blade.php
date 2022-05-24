@@ -47,43 +47,6 @@
         </div>
       </div>
 
-      <div class="row justify-content-between"><!--second row-->
-
-
-        <div class="feature-item-tests col-lg-5"><!--game 3-->
-
-          <a href="game3.html"><img src="../img/doctors.png" alt="" class="img-fluid w-100"></a>
-          <div class="content">
-            <a href="game3.html"><h3 class="mt-4 mb-2 test-title ">Game 3</h3></a>
-            <p class="mb-4 ">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!</p>
-            <a href="game3.html" class="read-more btn btn-primary rounded-pill">Play Now<i class="icofont-simple-right ml-2"></i></a>
-          </div>
-        </div>
-
-        <div class="feature-item-tests col-lg-5 " ><!--game 4-->
-
-          <a href="game4.html"><img src="../img/doctors.png" alt="" class="img-fluid w-100"></a>
-          <div class="content">
-            <a href="game4.html"><h3 class="mt-4 mb-2 test-title ">Game 4</h3></a>
-            <p class="mb-4 ">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!</p>
-            <a href="game4.html" class="read-more btn btn-primary rounded-pill">Play Now<i class="icofont-simple-right ml-2"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-5"><!--page numbers-->
-        <div class="col-lg-8">
-          <nav class="pagination py-2 d-inline-block">
-            <div class="nav-links">
-              <span aria-current="page" class="page-numbers current">1</span>
-              <a class="page-numbers" href="#">2</a>
-              <a class="page-numbers" href="#">3</a>
-              <a class="page-numbers" href="#"><i class="icofont-thin-double-right"></i></a>    
-            </div>
-          </nav>
-        </div>
-      </div>
-
     </div>
   </section>
 
