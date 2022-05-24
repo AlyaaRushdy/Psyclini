@@ -20,7 +20,7 @@
 
 
 <section class="section game-wrap">
-    <div align="center"><iframe src="https://itch.io/embed-upload/5841721?color=ffffff" frameborder="0" height="650" width="1000" ></iframe></div>
+    <div align="center"><iframe src="https://itch.io/embed-upload/5848046?color=ffffff" frameborder="0" height="650" width="1000" ></iframe></div>
 </section>
 
 <!--footer begin-->
