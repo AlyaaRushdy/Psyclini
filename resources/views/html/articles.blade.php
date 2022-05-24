@@ -17,7 +17,7 @@
             <div class="col-lg-12 col-md-12 mb-5"><!--article 1-->
               <div class="blog-item">
                 <div class="blog-thumb">
-                  <img src="../img/الوسواس القهري.jpg" alt="" class="img-fluid ">
+                  <a href="{{ route('article1') }}"><img src="../img/الوسواس القهري.jpg" alt="" class="img-fluid "></a>
                 </div>
                 <div class="blog-item-content">
                   <div class="blog-item-meta mb-3 mt-4">
@@ -39,7 +39,7 @@
             <div class="col-lg-12 col-md-12 mb-5"><!--article 2-->
               <div class="blog-item">
                 <div class="blog-thumb">
-                  <img src="../img/الفصام.jpg" alt="" class="img-fluid ">
+                  <a href="{{ route('article2') }}"><img src="../img/الفصام.jpg" alt="" class="img-fluid "></a>
                 </div>
                 <div class="blog-item-content">
                   <div class="blog-item-meta mb-3 mt-4">
@@ -47,10 +47,10 @@
                     <span class="text-black text-capitalize text-muted mr-3"><i class="icofont-calendar mr-1"></i> 28th January</span>
                   </div>
                   <div class="dir-rtl">
-                    <h2 class="mt-3 mb-3"><a href="article2.html">الشيزوفرينيا أو انفصام الشخصية</a></h2>
+                    <h2 class="mt-3 mb-3"><a href="{{ route('article2') }}">الشيزوفرينيا أو انفصام الشخصية</a></h2>
                     <p class="mb-4">تُعّرف الشيزوفرينيا، أو الفصام، أو الفُصام العقلي، أو السكيزوفرينيا، أو السكيتسوفرينيا بأنه اضطراب نفسي مزمن يفسّر فيه المصاب الواقع بشكل غير طبيعي، وتسبب الإصابة بفصام الشخصية الهلوسة، وحدوث مشاكل في التركيز، والتفكير، وطريقة التعبير عن المشاعر، بالإضافة الي... </p>
                   </div>
-                  <a href="article2.html" target="_blank" class="btn btn-primary rounded-pill">Read More <i class="icofont-simple-right ml-2  "></i></a>
+                  <a href="{{ route('article2') }}" target="_blank" class="btn btn-primary rounded-pill">Read More <i class="icofont-simple-right ml-2  "></i></a>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@
             <div class="col-lg-12 col-md-12 mb-5"><!--article 3-->
               <div class="blog-item">
                 <div class="blog-thumb">
-                  <img src="../img/الرهاب الاجتماعي.jpg" alt="" class="img-fluid ">
+                  <a href="{{ route('article3') }}"><img src="../img/الرهاب الاجتماعي.jpg" alt="" class="img-fluid "></a>
                 </div>
                 <div class="blog-item-content">
                   <div class="blog-item-meta mb-3 mt-4">
@@ -95,7 +95,7 @@
 
               <div class="py-2">
                 <span class="text-sm text-muted">06 Feb 2022</span>
-                <h6 class="my-2"><a href="article2.html">مرض الفصام</a></h6>
+                <h6 class="my-2"><a href="{{ route('article2') }}">مرض الفصام</a></h6>
               </div>
 
               <div class="py-2">

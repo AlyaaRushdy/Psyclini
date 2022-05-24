@@ -26,7 +26,7 @@
                           <span class="text-color-2 text-capitalize mr-3"><i class="icofont-book-mark mr-2"></i>General Psychiatry</span>
                           <span class="text-black text-muted text-capitalize mr-3"><i class="icofont-calendar mr-2"></i> 06th February 2022</span>
                         </div> 
-                        <div lang="ar" dir="rtl" >
+                        <div class="dir-rtl"  >
                           <h2 class="mb-4 text-md"><a href="article 2 page.html">انفصام الشخصيه</a></h2>
 
                           <h3 class="article-subtitle">المحتوي</h3>
@@ -127,12 +127,12 @@
                     <h4>Popular Articles</h4>
                     <div class="py-2">
                       <span class="text-sm text-muted">28 Jan 2022</span>
-                      <h6 class="my-2"><a href="article1.html">الوسواس القهري</a></h6>
+                      <h6 class="my-2"><a href="{{ route('article1') }}">الوسواس القهري</a></h6>
                     </div>
       
                     <div class="py-2">
                       <span class="text-sm text-muted">06 Feb 2022</span>
-                      <h6 class="my-2"><a href="article2.html">مرض الفصام</a></h6>
+                      <h6 class="my-2"><a href="{{ route('article2') }}">مرض الفصام</a></h6>
                     </div>
       
                     <div class="py-2">

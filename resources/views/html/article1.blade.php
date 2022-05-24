@@ -117,12 +117,12 @@
                     <h4>Popular Articles</h4>
                     <div class="py-2">
                       <span class="text-sm text-muted">28 Jan 2022</span>
-                      <h6 class="my-2"><a href="article1.html">الوسواس القهري</a></h6>
+                      <h6 class="my-2"><a href="{{ route('article1') }}">الوسواس القهري</a></h6>
                     </div>
       
                     <div class="py-2">
                       <span class="text-sm text-muted">06 Feb 2022</span>
-                      <h6 class="my-2"><a href="article2.html">مرض الفصام</a></h6>
+                      <h6 class="my-2"><a href="{{ route('article2') }}">مرض الفصام</a></h6>
                     </div>
       
                     <div class="py-2">
