@@ -33,7 +33,7 @@
                         <div class="dir-rtl" >
                           <h2 class="mb-4 text-md"><a href="{{ route('article3') }}">طرق دعم مصاب الرهاب الاجتماعي</a></h2>
 
-                          <h3 class="article-subtitle">المحتوي</h3>
+                          <h3 class="article-subtitle" class="title-color">المحتوي</h3>
                           <ul class="list-unstyled article-parag" >
                             <li><a href="#المرض">أمور يجب أن تتوقف عن قولها</a></li>
                             <li><a href="#الاعراض">طرق دعم مصاب الرهاب الاجتماعي</a></li>
@@ -148,12 +148,12 @@
                     <h4>Popular Articles</h4>
                     <div class="py-2">
                       <span class="text-sm text-muted">28 Jan 2022</span>
-                      <h6 class="my-2"><a href="article1.html">الوسواس القهري</a></h6>
+                      <h6 class="my-2"><a href="{{ route('article1') }}">الوسواس القهري</a></h6>
                     </div>
       
                     <div class="py-2">
                       <span class="text-sm text-muted">06 Feb 2022</span>
-                      <h6 class="my-2"><a href="article2.html">مرض الفصام</a></h6>
+                      <h6 class="my-2"><a href="{{ route('article2') }}">مرض الفصام</a></h6>
                     </div>
       
                     <div class="py-2">
@@ -175,7 +175,7 @@
                       </li>
                       <li class="align-items-center">
                         <a href="#">General Psychiatry</a>
-                        <span>(0)</span>
+                        <span>(3)</span>
                       </li>
                       <li class="align-items-center">
                         <a href="#">Psychiatry of Intellectual Disability (PID)</a>

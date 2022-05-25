@@ -1,28 +1,11 @@
 @extends('layouts.app')
 @section('content')
 <!DOCTYPE html>
-    
 <html>
 <head>
-
     <title>Psyclini</title>
-<style>
-input[type= number]::-webkit-outer-spin-button,
-input[type= number]::-webkit-inner-spin-button{
-  -webkit-appearance : none;
-  -moz-appearance : none;
-  margin :0;
-
-}
-
-</style>
- 
-<link rel="stylesheet" href="../css/home_style.css">
-<link rel="stylesheet" href="../css/icofont.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/slick-theme.css">
-<link rel="stylesheet" href="../css/slick.css">
-<link rel="icon" href="../img/icon.png">    
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
 </head>
 <body id="bootstrap-overrides top">
 
@@ -230,7 +213,7 @@ input[type= number]::-webkit-inner-spin-button{
               <i class="icofont-ui-email"></i>
               <div class="media-body">
                 <h3>Email</h3>
-                <p>psyclini_clinic@gmail.com</p>
+                <p>psychclini@gmail.com</p>
               </div>
             </div>
           </div>
@@ -293,8 +276,6 @@ input[type= number]::-webkit-inner-spin-button{
     </footer>
   </div>
   <!--footer end-->
-
-
 
 </body>
 </html>

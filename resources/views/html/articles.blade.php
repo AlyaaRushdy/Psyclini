@@ -117,7 +117,7 @@
                 </li>
                 <li class="align-items-center">
                   <a href="#">General Psychiatry</a>
-                  <span>(0)</span>
+                  <span>(3)</span>
                 </li>
                 <li class="align-items-center">
                   <a href="#">Psychiatry of Intellectual Disability (PID)</a>
@@ -145,7 +145,7 @@
           </div>
         </div>
       </div><!--end row-->
-      <div class="row mt-5"><!--page numbers-->
+      <!--<div class="row mt-5"> -- page numbers--
         <div class="col-lg-8">
           <nav class="pagination py-2 d-inline-block">
             <div class="nav-links">
@@ -156,7 +156,7 @@
             </div>
           </nav>
         </div>
-      </div>
+      </div>-->
     </div>
   </section>
 

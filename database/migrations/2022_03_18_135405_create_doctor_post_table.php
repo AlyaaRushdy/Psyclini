@@ -13,23 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('appointment_doctor', function (Blueprint $table) {
+        Schema::create('doctor_post', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('date');
-			$table->time('time');
-			$table->string('message')->nullable();
-			$table->boolean('aoppintment_status');
-            $table->integer('patient_id')->unsigned();
-            $table->integer('appointment_id')->unsigned();
+            $table->integer('post_id')->unsigned();
             $table->bigInteger('doctor_id')->unsigned();
-            $table->foreign('patient_id')
+            $table->foreign('post_id')
                   ->references('id')
-                  ->on('patients')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-            $table->foreign('appointment_id')
-                  ->references('id')
-                  ->on('appointments')
+                  ->on('posts')
                   ->onDelete('cascade')
                   ->onUpdate('cascade');
             $table->foreign('doctor_id')
@@ -37,10 +27,9 @@ return new class extends Migration
                   ->on('doctors')
                   ->onDelete('cascade')
                   ->onUpdate('cascade');
-                
-            $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -49,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('appointment_doctor');
+        Schema::dropIfExists('doctor_posts');
     }
 };

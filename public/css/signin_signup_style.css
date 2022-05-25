@@ -8388,5 +8388,13 @@ h1, h2, h3, h4, h5,
   position: absolute;
   z-index: -1;
 }
-
-
+.rounded-pill {
+ border-radius:50rem!important;
+ font-weight:bold !important;
+ background-color : #4d77ff;
+ color: #fff !important;
+ border: none !important;
+ line-height:1.5!important;
+ font-size:16px!important;
+ padding:.6rem 1.3rem !important;
+} 

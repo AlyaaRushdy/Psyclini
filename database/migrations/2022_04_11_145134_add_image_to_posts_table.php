@@ -18,24 +18,12 @@ return new class extends Migration
             $table->longText('body');
             $table->boolean('status')->nullable();
             $table->string('speciality');
-            $table->integer('patient_id')->unsigned()->nullable();
+            $table->integer('patient_id')->unsigned();
             $table->foreign('patient_id')
                   ->references('id')
                   ->on('patients')
                   ->onDelete('cascade')
                   ->onUpdate('cascade');
-            $table->bigInteger('doctor_id')->unsigned()->nullable();
-            $table->foreign('doctor_id')
-                ->references('id')
-                ->on('doctors')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-            $table->bigInteger('secretary_ssn')->unsigned()->nullable();
-            $table->foreign('secretary_ssn')
-                ->references('ssn')
-                ->on('secretaries')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
             $table->timestamps();
         });
     }

@@ -4,7 +4,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-        <title>Psyclini</title>
+    <title>Sign In - Psyclini</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/signin_signup_style.css">
 
 </head>
 <body>
@@ -23,7 +25,7 @@
                                         @csrf
                                         <div class="form-group mt-3">
                                             <input type="text" class="form-control" name="email" required>
-                                            <label class="form-control-placeholder" for="Username" >E-mail/Username</label> 
+                                            <label class="form-control-placeholder" for="Username" >E-mail</label> 
 										</div>
                                         <div class="form-group">
                                             <input id="password-field" type="password" class="form-control" name = 'password' required>

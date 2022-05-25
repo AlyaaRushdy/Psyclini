@@ -2744,6 +2744,16 @@ footer ul li{
 .my-footer .bi-github:hover{
   color: #4d77ff !important;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 /*.game-wrap{
   min-height: 20rem !important;
 }*/

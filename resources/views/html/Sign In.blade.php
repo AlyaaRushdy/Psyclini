@@ -4,7 +4,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Psyclini</title>
+    <title>Sign In - Psyclini</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/signin_signup_style.css">
 
     </head>
 	<body>

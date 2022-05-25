@@ -29,7 +29,7 @@
                         <div class="dir-rtl"  >
                           <h2 class="mb-4 text-md"><a href="article 2 page.html">انفصام الشخصيه</a></h2>
 
-                          <h3 class="article-subtitle">المحتوي</h3>
+                          <h3 class="article-subtitle" class="title-color">المحتوي</h3>
                           <ul class="list-unstyled article-parag" >
                             <li><a href="#المرض">الشيزوفرينيا أو انفصام الشخصية  </a></li>
                             <li><a href="#الاعراض">علامات وأعراض الإصابة بالفصام</a></li>
@@ -154,7 +154,7 @@
                       </li>
                       <li class="align-items-center">
                         <a href="#">General Psychiatry</a>
-                        <span>(2)</span>
+                        <span>(3)</span>
                       </li>
                       <li class="align-items-center">
                         <a href="#">Psychiatry of Intellectual Disability (PID)</a>

@@ -4,14 +4,10 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Psyclini</title>
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/icofont.css">
+        <title>Sign Up - Psyclini</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/signin_signup_style.css">
-        <link rel="stylesheet" href="../css/home_style.css">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/flick/jquery-ui.css" rel="stylesheet">
-        <link rel="icon" href="../img/icon.png">
  	<body>  
 
         <section class="ftco-section">
@@ -109,7 +105,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--لينك jquery الرئيسي -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!--لينك المكتبه بتاعه التاريخ نفسه-->
-        <script src="../js/bootstrap.min.js"></script>
         <script src="../js/singin_signup.js"></script>
 
         <script>
@@ -117,7 +112,8 @@
                 maxDate: "-548",
                 changeMonth: true,
                 changeYear: true,
-                yearRange: "-100:+0"
+                yearRange: "-100:+0",
+                dateFormat: 'yy-mm-dd'
             });
         </script>
 	</body>

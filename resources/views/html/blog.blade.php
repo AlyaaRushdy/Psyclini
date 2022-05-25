@@ -148,7 +148,7 @@
 
               <div class="py-2">
                 <span class="text-sm text-muted">{{ $ppp->first()->created_at->format('d M-Y') }}</span>
-                  <h6 class="my-2"><a href="{{route('blog.page', $ppp->first()->body)}}">{{ $ppp->first()->body }}</a></h6>
+                  <h6 class="my-2"><a href="{{route('blog.page', $ppp->first()->id)}}">{{ $ppp->first()->body }}</a></h6>
               </div>                       
             </div>
 
