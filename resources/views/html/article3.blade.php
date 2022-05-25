@@ -33,7 +33,7 @@
                         <div class="dir-rtl" >
                           <h2 class="mb-4 text-md"><a href="{{ route('article3') }}">طرق دعم مصاب الرهاب الاجتماعي</a></h2>
 
-                          <h3 class="article-subtitle">المحتوي</h3>
+                          <h3 class="article-subtitle" class="title-color">المحتوي</h3>
                           <ul class="list-unstyled article-parag" >
                             <li><a href="#المرض">أمور يجب أن تتوقف عن قولها</a></li>
                             <li><a href="#الاعراض">طرق دعم مصاب الرهاب الاجتماعي</a></li>

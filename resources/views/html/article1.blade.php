@@ -28,7 +28,7 @@
 
                         <div class="dir-rtl">
                           <h2 class="mb-4 text-md"><a href="article page.html">الوسواس القهري</a></h2>
-                          <h3>المحتوي</h3>
+                          <h3 class="title-color">المحتوي</h3>
                           <ul class="list-unstyled article-parag">
                             <li><a href="#المرض"> ما هو مرض الوسواس القهري</a></li>
                             <li><a href="#الاعراض"> أعراض الإصابة بالوسواس القهري</a></li>

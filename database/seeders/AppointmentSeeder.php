@@ -10,669 +10,1733 @@ class AppointmentSeeder extends Seeder
     /**
      * Run the database seeds.
      *
-     * @return void
+     * @return vodoctor_id
      */
     public function run()
     {
         //
         \App\Models\Appointment::create([
-            'id'=>'111',
+          
             'time'=>'10:00',
-            'day'=>'sat',
+            'day'=>'saturday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8524001',
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'112',
-            'time'=>'10:00',
-            'day'=>'sun',
-			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8265003'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
             ]);	
-\App\Models\Appointment::create([
-            'id'=>'113',
-            'time'=>'10:00',
-            'day'=>'mon',
+				\App\Models\Appointment::create([
+           
+            'time'=>'12:00',
+            'day'=>'saturday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8179005'
-            ]);	
-\App\Models\Appointment::create([
-            'id'=>'114',
-            'time'=>'10:00',
-            'day'=>'tue',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+           
+            'time'=>'13:00',
+            'day'=>'saturday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+			\App\Models\Appointment::create([
 
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'115',
-            'time'=>'10:00',
-            'day'=>'wed',
+            'time'=>'14:00',
+            'day'=>'saturday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8524001',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+        
+            'time'=>'11:00',
+            'day'=>'saturday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
             ]);
 \App\Models\Appointment::create([
-            'id'=>'116',
+       
             'time'=>'10:00',
-            'day'=>'thu',
+            'day'=>'sunday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8265003'
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'127',
-            'time'=>'5:00',
-            'day'=>'fri',
-			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'211',
-            'time'=>'10:00',
-            'day'=>'sat',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8354007'
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'212',
-            'time'=>'10:00',
-            'day'=>'sun',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8775009'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
             ]);	
 \App\Models\Appointment::create([
-            'id'=>'213',
-            'time'=>'10:00',
-            'day'=>'mon',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'75890011'
-            ]);	
-\App\Models\Appointment::create([
-            'id'=>'214',
-            'time'=>'10:00',
-            'day'=>'tue',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
 
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'215',
-            'time'=>'10:00',
-            'day'=>'wed',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8354007'
+            'time'=>'11:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
             ]);
-\App\Models\Appointment::create([
-            'id'=>'216',
-            'time'=>'10:00',
-            'day'=>'thu',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'8179005'
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'227',
-            'time'=>'05:00',
-            'day'=>'fri',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            ]);
-\App\Models\Appointment::create([
-            'id'=>'311',
-            'time'=>'10:00',
-            'day'=>'sat',
-			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'88811013'
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'312',
-            'time'=>'10:00',
-            'day'=>'sun',
-			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'91189015'
-            ]);	
-\App\Models\Appointment::create([
-            'id'=>'313',
-            'time'=>'10:00',
-            'day'=>'mon',
-			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            ]);	
-\App\Models\Appointment::create([
-            'id'=>'314',
-            'time'=>'10:00',
-            'day'=>'tue',
-			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'315',
-            'time'=>'10:00',
-            'day'=>'wed',
-			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'88811013'
-            ]);
-\App\Models\Appointment::create([
-            'id'=>'316',
-            'time'=>'10:00',
-            'day'=>'thu',
-			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'91189015'
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'327',
-            'time'=>'05:00',
-            'day'=>'fri',
-			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            'doctor_ssn'=>'75890011'
+			\App\Models\Appointment::create([
 
+            'time'=>'12:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
+            ]);
+			\App\Models\Appointment::create([
+  
+            'time'=>'13:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'14:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
             ]);
 \App\Models\Appointment::create([
-            'id'=>'121',
-            'time'=>'05:00',
-            'day'=>'sat',
+          
+            'time'=>'11:00',
+            'day'=>'monday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8542002'
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'122',
-            'time'=>'05:00',
-            'day'=>'sun',
-			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8256004'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
             ]);	
-\App\Models\Appointment::create([
-            'id'=>'123',
-            'time'=>'05:00',
-            'day'=>'mon',
+			\App\Models\Appointment::create([
+           
+            'time'=>'12:00',
+            'day'=>'monday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8197006'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
             ]);	
-\App\Models\Appointment::create([
-            'id'=>'124',
-            'time'=>'05:00',
-            'day'=>'tue',
+			\App\Models\Appointment::create([
+          
+            'time'=>'13:00',
+            'day'=>'monday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'125',
-            'time'=>'05:00',
-            'day'=>'wed',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
+            ]);	
+			\App\Models\Appointment::create([
+            
+            'time'=>'14:00',
+            'day'=>'monday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8542002'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
+            ]);	
+			\App\Models\Appointment::create([
+          
+            'time'=>'10:00',
+            'day'=>'monday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
             ]);
 \App\Models\Appointment::create([
-            'id'=>'126',
-            'time'=>'05:00',
-            'day'=>'thu',
+           
+            'time'=>'11:00',
+            'day'=>'tuseday',
 			'hall'=>'a',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8256004'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+           
+            'time'=>'12:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+          
+            'time'=>'13:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+            
+            'time'=>'14:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+            
+            'time'=>'10:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
             ]);				
 \App\Models\Appointment::create([
-            'id'=>'221',
-            'time'=>'05:00',
-            'day'=>'sat',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8345008'
+           
+            'time'=>'10:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+            
+            'time'=>'11:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+      
+            'time'=>'12:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+         
+            'time'=>'13:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'14:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'1',
+            ]);
+\App\Models\Appointment::create([
+          
+            'time'=>'10:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
+            ]);	
+\App\Models\Appointment::create([
+       
+            'time'=>'11:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
+            ]);	
+\App\Models\Appointment::create([
+        
+            'time'=>'12:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
+            ]);	
+\App\Models\Appointment::create([
+           
+            'time'=>'13:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
+            ]);	
+\App\Models\Appointment::create([
+          
+            'time'=>'14:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'3',
+            ]);				
+\App\Models\Appointment::create([
+          
+            'time'=>'17:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);
+\App\Models\Appointment::create([
+    
+            'time'=>'18:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
             ]);			
 \App\Models\Appointment::create([
-            'id'=>'222',
-            'time'=>'05:00',
-            'day'=>'sun',
+           
+            'time'=>'19:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);			
+\App\Models\Appointment::create([
+          
+            'time'=>'20:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);			
+\App\Models\Appointment::create([
+        
+            'time'=>'21:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);						
+\App\Models\Appointment::create([
+       
+            'time'=>'10:00',
+            'day'=>'saturday',
 			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'87570010'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'7',
             ]);	
 \App\Models\Appointment::create([
-            'id'=>'223',
-            'time'=>'05:00',
-            'day'=>'mon',
+            
+            'time'=>'11:00',
+            'day'=>'saturday',
 			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'75980012'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);			
+\App\Models\Appointment::create([
+           
+            'time'=>'12:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);			
+\App\Models\Appointment::create([
+      
+            'time'=>'13:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);			
+\App\Models\Appointment::create([
+            
+            'time'=>'14:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);						
+\App\Models\Appointment::create([
+      
+            'time'=>'10:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'9',
+            ]);	
+			\App\Models\Appointment::create([
+          
+            'time'=>'11:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'9',
+            ]);	
+			\App\Models\Appointment::create([
+          
+            'time'=>'12:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'9',
+            ]);	
+			\App\Models\Appointment::create([
+        
+            'time'=>'13:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'9',
+            ]);	
+			\App\Models\Appointment::create([
+      
+            'time'=>'14:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'9',
             ]);	
 \App\Models\Appointment::create([
-            'id'=>'224',
-            'time'=>'05:00',
-            'day'=>'tue',
+        
+            'time'=>'10:00',
+            'day'=>'monday',
 			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);	
+			\App\Models\Appointment::create([
+            
+            'time'=>'11:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);	
+			\App\Models\Appointment::create([
+     
+            'time'=>'12:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'13:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);	
+			\App\Models\Appointment::create([
+  
+            'time'=>'14:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);	
+\App\Models\Appointment::create([
+         
+            'time'=>'10:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);		
+\App\Models\Appointment::create([
+         
+            'time'=>'11:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+\App\Models\Appointment::create([
+            
+            'time'=>'12:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+\App\Models\Appointment::create([
+       
+            'time'=>'13:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+\App\Models\Appointment::create([
+         
+            'time'=>'14:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);			
+\App\Models\Appointment::create([
+       
+            'time'=>'10:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+			'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'11:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+			'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);
+			\App\Models\Appointment::create([
+        
+            'time'=>'12:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+			'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);
+			\App\Models\Appointment::create([
+        
+            'time'=>'13:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+			'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);
+			\App\Models\Appointment::create([
+           
+            'time'=>'14:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+			'doctor_status'=>'1',
+            'doctor_id'=>'7',
+            ]);
+\App\Models\Appointment::create([
+           
+            'time'=>'11:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
+            ]);	
+\App\Models\Appointment::create([
+          
+            'time'=>'12:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
+            ]);
+\App\Models\Appointment::create([
+            
+            'time'=>'13:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
+            ]);
+\App\Models\Appointment::create([
+         
+            'time'=>'14:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
+            ]);
+\App\Models\Appointment::create([
+         
+            'time'=>'10:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'5',
+            ]);			
+\App\Models\Appointment::create([
+         
+            'time'=>'17:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);
+			\App\Models\Appointment::create([
+           
+            'time'=>'18:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);
+			\App\Models\Appointment::create([
+          
+            'time'=>'19:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);
+			\App\Models\Appointment::create([
+           
+            'time'=>'20:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);
+			\App\Models\Appointment::create([
+        
+            'time'=>'21:00',
+            'day'=>'frdoctor_iday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);
+\App\Models\Appointment::create([
+           
+            'time'=>'10:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);	
+\App\Models\Appointment::create([
+        
+            'time'=>'11:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);
+\App\Models\Appointment::create([
+        
+            'time'=>'12:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);
+\App\Models\Appointment::create([
+  
+            'time'=>'13:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);
+\App\Models\Appointment::create([
+         
+            'time'=>'14:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);			
+\App\Models\Appointment::create([
+      
+            'time'=>'10:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);
+			\App\Models\Appointment::create([
+          
+            'time'=>'11:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);
+			\App\Models\Appointment::create([
+          
+            'time'=>'12:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);
+			\App\Models\Appointment::create([
+   
+            'time'=>'13:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);
+			\App\Models\Appointment::create([
+          
+            'time'=>'14:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);
+\App\Models\Appointment::create([
+       
+            'time'=>'10:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+			\App\Models\Appointment::create([
+         
+            'time'=>'11:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'12:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+         
+            'time'=>'13:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+			\App\Models\Appointment::create([
+           
+            'time'=>'14:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+\App\Models\Appointment::create([
+      
+            'time'=>'10:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+            
+            'time'=>'11:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+          
+            'time'=>'12:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+    
+            'time'=>'13:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+    
+            'time'=>'14:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
 			
-            ]);			
 \App\Models\Appointment::create([
-            'id'=>'225',
-            'time'=>'05:00',
-            'day'=>'wed',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8345008'
+ 
+            'time'=>'10:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);
+			\App\Models\Appointment::create([
+   
+            'time'=>'11:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);
+			
+			\App\Models\Appointment::create([
+         
+            'time'=>'12:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);
+			\App\Models\Appointment::create([
+     
+            'time'=>'13:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'14:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'13',
             ]);
 \App\Models\Appointment::create([
-            'id'=>'226',
-            'time'=>'05:00',
-            'day'=>'thu',
-			'hall'=>'b',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'87570010'
+
+            'time'=>'10:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);			
+			\App\Models\Appointment::create([
+           
+            'time'=>'11:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);			
+			\App\Models\Appointment::create([
+            
+            'time'=>'12:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);			
+			\App\Models\Appointment::create([
+        
+            'time'=>'13:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
+            ]);			
+			\App\Models\Appointment::create([
+      
+            'time'=>'14:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'15',
             ]);			
 \App\Models\Appointment::create([
-            'id'=>'321',
-            'time'=>'05:00',
-            'day'=>'sat',
+     
+            'time'=>'17:00',
+            'day'=>'frdoctor_iday',
 			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'88118014'
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'322',
-            'time'=>'05:00',
-            'day'=>'sun',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'18:00',
+            'day'=>'frdoctor_iday',
 			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'84189016'
-            ]);	
-\App\Models\Appointment::create([
-            'id'=>'323',
-            'time'=>'05:00',
-            'day'=>'mon',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'19:00',
+            'day'=>'frdoctor_iday',
 			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'8775009'
-            ]);	
-\App\Models\Appointment::create([
-            'id'=>'324',
-            'time'=>'05:00',
-            'day'=>'tue',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'20:00',
+            'day'=>'frdoctor_iday',
 			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-            ]);			
-\App\Models\Appointment::create([
-            'id'=>'325',
-            'time'=>'05:00',
-            'day'=>'wed',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'21:00',
+            'day'=>'frdoctor_iday',
 			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'88118014'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            'doctor_id'=>'11',
             ]);
 \App\Models\Appointment::create([
-            'id'=>'326',
-            'time'=>'05:00',
-            'day'=>'thu',
+           
+            'time'=>'17:00',
+            'day'=>'saturday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);	
+\App\Models\Appointment::create([
+       
+            'time'=>'18:00',
+            'day'=>'saturday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+\App\Models\Appointment::create([
+            
+            'time'=>'19:00',
+            'day'=>'saturday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+\App\Models\Appointment::create([
+         
+            'time'=>'20:00',
+            'day'=>'saturday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+\App\Models\Appointment::create([
+       
+            'time'=>'21:00',
+            'day'=>'saturday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);			
+\App\Models\Appointment::create([
+    
+            'time'=>'17:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);	
+		\App\Models\Appointment::create([
+     
+            'time'=>'18:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);	
+			\App\Models\Appointment::create([
+       
+            'time'=>'19:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);	
+			\App\Models\Appointment::create([
+ 
+            'time'=>'20:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);	
+			\App\Models\Appointment::create([
+         
+            'time'=>'21:00',
+            'day'=>'sunday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);	
+\App\Models\Appointment::create([
+          
+            'time'=>'20:00',
+            'day'=>'monday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);	
+\App\Models\Appointment::create([
+        
+            'time'=>'21:00',
+            'day'=>'monday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);	
+			\App\Models\Appointment::create([
+     
+            'time'=>'17:00',
+            'day'=>'monday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);
+			\App\Models\Appointment::create([
+           
+            'time'=>'18:00',
+            'day'=>'monday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);
+			\App\Models\Appointment::create([
+          
+            'time'=>'17:00',
+            'day'=>'monday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'6',
+            ]);
+			
+\App\Models\Appointment::create([
+
+            'time'=>'17:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+
+            'time'=>'18:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+    
+            'time'=>'19:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+
+            'time'=>'20:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+   
+            'time'=>'21:00',
+            'day'=>'tuseday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);				
+\App\Models\Appointment::create([
+      
+            'time'=>'17:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+			\App\Models\Appointment::create([
+    
+            'time'=>'18:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+			\App\Models\Appointment::create([
+     
+            'time'=>'19:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+			\App\Models\Appointment::create([
+         
+            'time'=>'20:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+			\App\Models\Appointment::create([
+         
+            'time'=>'21:00',
+            'day'=>'wednesday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'2',
+            ]);
+\App\Models\Appointment::create([
+    
+            'time'=>'17:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);			
+\App\Models\Appointment::create([
+          
+            'time'=>'18:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);
+\App\Models\Appointment::create([
+         
+            'time'=>'19:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);
+\App\Models\Appointment::create([
+        
+            'time'=>'20:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);
+\App\Models\Appointment::create([
+           
+            'time'=>'21:00',
+            'day'=>'thursday',
+			'hall'=>'a',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'4',
+            ]);			
+\App\Models\Appointment::create([
+        
+            'time'=>'17:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);	
+\App\Models\Appointment::create([
+    
+            'time'=>'18:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);	
+\App\Models\Appointment::create([
+            
+            'time'=>'19:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);	
+\App\Models\Appointment::create([
+      
+            'time'=>'20:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);	
+\App\Models\Appointment::create([
+       
+            'time'=>'21:00',
+            'day'=>'saturday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);				
+\App\Models\Appointment::create([
+     
+            'time'=>'17:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);	
+			\App\Models\Appointment::create([
+     
+            'time'=>'18:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);	
+			\App\Models\Appointment::create([
+   
+            'time'=>'19:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);	
+			\App\Models\Appointment::create([
+            
+            'time'=>'20:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);	
+			\App\Models\Appointment::create([
+          
+            'time'=>'21:00',
+            'day'=>'sunday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);	
+\App\Models\Appointment::create([
+
+            'time'=>'17:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'18:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'19:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);	
+			\App\Models\Appointment::create([
+  
+            'time'=>'20:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);	
+			\App\Models\Appointment::create([
+   
+            'time'=>'21:00',
+            'day'=>'monday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'12',
+            ]);	
+\App\Models\Appointment::create([
+     
+            'time'=>'17:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+
+            'time'=>'18:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+\App\Models\Appointment::create([
+      
+            'time'=>'19:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'20:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'21:00',
+            'day'=>'tuseday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);			
+\App\Models\Appointment::create([
+       
+            'time'=>'17:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);
+			\App\Models\Appointment::create([
+       
+            'time'=>'18:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'19:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);
+			\App\Models\Appointment::create([
+ 
+            'time'=>'20:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'21:00',
+            'day'=>'wednesday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'8',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'17:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);	
+\App\Models\Appointment::create([
+
+            'time'=>'18:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'19:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'20:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'21:00',
+            'day'=>'thursday',
+			'hall'=>'b',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'10',
+            ]);			
+\App\Models\Appointment::create([
+
+            'time'=>'17:00',
+            'day'=>'saturday',
 			'hall'=>'c',
-            'patient_status1' => '0',
-			'patient_status2' => '0',
-			'patient_status3' => '0',
-			'patient_status4' => '0',
-			'patient_status5' => '0',
-            'doctor_status1'=>'1',
-            'doctor_status2'=>'1',
-            'doctor_status3'=>'1',
-            'doctor_status4'=>'1',
-            'doctor_status5'=>'1',
-			'doctor_ssn'=>'84189016'
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);	
+\App\Models\Appointment::create([
+   
+            'time'=>'18:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);	
+\App\Models\Appointment::create([
+  
+            'time'=>'19:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);	
+\App\Models\Appointment::create([
+
+            'time'=>'20:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);	
+\App\Models\Appointment::create([
+  
+            'time'=>'21:00',
+            'day'=>'saturday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);				
+\App\Models\Appointment::create([
+
+            'time'=>'17:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'18:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);	
+			\App\Models\Appointment::create([
+ 
+            'time'=>'19:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);	
+			\App\Models\Appointment::create([
+    
+            'time'=>'20:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'21:00',
+            'day'=>'sunday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);	
+\App\Models\Appointment::create([
+
+            'time'=>'17:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'9',
+            ]);	
+			\App\Models\Appointment::create([
+    
+            'time'=>'18:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'9',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'19:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'9',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'20:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'9',
+            ]);
+			\App\Models\Appointment::create([
+    
+            'time'=>'21:00',
+            'day'=>'monday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'9',
+            ]);
+\App\Models\Appointment::create([
+    
+            'time'=>'17:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'18:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+			\App\Models\Appointment::create([
+ 
+            'time'=>'19:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'20:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+			\App\Models\Appointment::create([
+
+            'time'=>'21:00',
+            'day'=>'tuseday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+            ]);	
+\App\Models\Appointment::create([
+   
+            'time'=>'17:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'18:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'19:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'20:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);
+			\App\Models\Appointment::create([
+
+            'time'=>'21:00',
+            'day'=>'wednesday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'14',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'17:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);
+\App\Models\Appointment::create([
+   
+            'time'=>'18:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);
+\App\Models\Appointment::create([
+
+            'time'=>'19:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);
+			\App\Models\Appointment::create([
+  
+            'time'=>'20:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
+            ]);
+			\App\Models\Appointment::create([
+      
+            'time'=>'21:00',
+            'day'=>'thursday',
+			'hall'=>'c',
+            'patient_status' => '0',
+            'doctor_status'=>'1',
+			'doctor_id'=>'16',
             ]);
 
     }

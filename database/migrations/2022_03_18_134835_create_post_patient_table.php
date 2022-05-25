@@ -13,20 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('comments', function (Blueprint $table) {
+        Schema::create('post_patient', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('body');
             $table->integer('post_id')->unsigned();
+            $table->integer('patient_id')->unsigned();
             $table->foreign('post_id')
                   ->references('id')
                   ->on('posts')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-            $table->bigInteger('doctor_id')->unsigned()->nullable();
-            $table->integer('patient_id')->unsigned()->nullable();
-            $table->foreign('doctor_id')
-                  ->references('id')
-                  ->on('doctors')
                   ->onDelete('cascade')
                   ->onUpdate('cascade');
             $table->foreign('patient_id')
@@ -34,7 +27,6 @@ return new class extends Migration
                   ->on('patients')
                   ->onDelete('cascade')
                   ->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 
@@ -45,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comments');
+        Schema::dropIfExists('post_patients');
     }
 };
