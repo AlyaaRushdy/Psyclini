@@ -139,7 +139,7 @@
                       </li>
                       <li class="align-items-center">
                         <a href="#">General Psychiatry</a>
-                        <span>(2)</span>
+                        <span>(3)</span>
                       </li>
                       <li class="align-items-center">
                         <a href="#">Psychiatry of Intellectual Disability (PID)</a>
