@@ -3,16 +3,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-
-    <title>Psyclini</title>
-    <link rel="stylesheet" href="../css/home_style.css">
-    <link rel="stylesheet" href="../css/icofont.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/slick-theme.css">
-    <link rel="stylesheet" href="../css/slick.css">
-    <link rel="icon" href="../img/icon.png">
-  
+<head>  
 </head>
 <body id="bootstrap-overrides top">
   
@@ -28,7 +19,7 @@
             <ul class="list-unstyled ps-0 ">
 
               <li class="mb-1"><!--speciality button and list-->
-                <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#specialities-collapse" aria-expanded="true">
+                <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#specialities-collapse" aria-expanded="false">
                   Specialities
                 </a>
                 <div class="collapse " id="specialities-collapse">
@@ -90,11 +81,6 @@
                     <li class="disp-inline">
                       <label class="sidebar-subitem">
                         <input type="radio" name="gender" value="female" class="radio" id="female">Female
-                      </label>
-                    </li>
-                    <li class="disp-inline">
-                      <label class="sidebar-subitem">
-                        <input type="radio" name="gender" value="other" class="radio" id="either">Either
                       </label>
                     </li>
                   </ul>
@@ -209,7 +195,6 @@
   
 
   <!--footer begin-->
-  <!--footer begin-->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top my-footer">
       <div class="col-md-4 d-flex align-items-center">
@@ -228,9 +213,6 @@
     </footer>
   </div>
   <!--footer end-->
-  <!--footer end-->
-
-  <script src="../js/bootstrap.bundle.js"></script>
 
 </body>
 </html>

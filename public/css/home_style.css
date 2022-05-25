@@ -2115,8 +2115,7 @@ footer ul li{
   border-radius: .5rem;
   padding: 1rem 1rem .5rem .75rem !important;
   margin-bottom: 1rem;
-  overflow-y: auto;
-  height: 58vh;
+  height: auto;
 }
 
 .doctors-sidebar .list-unstyled{
@@ -2753,6 +2752,9 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+.doctors-sidebar a.btn-toggle[aria-expanded="false"]{
+  color: #222;
 }
 /*.game-wrap{
   min-height: 20rem !important;

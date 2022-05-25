@@ -8,7 +8,8 @@
     <meta charset="utf-8">
 
     <title>Psyclini</title>
-    
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
 </head>
 <body id="bootstrap-overrides top">
   
