@@ -78,22 +78,18 @@
                 <table class="table p-2 text-center" id="history_table">
                   <thead> 
                     <tr class="justify-content-between blue-title text-center">
-                      <th class="text-center">Doctor's Name</th>
+                      
                       <th class="text-center">Date</th>
                       <th class="text-center">Time</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Ahmed Saad</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
+                    @foreach
+					<tr>
+                      <td>{{$appointment->date}}</td>
+                      <td>{{$appointment->time}}</td>
                     </tr>
-                    <tr>
-                      <td>Marina Kamil</td>
-                      <td>12/4/2022</td>
-                      <td>10:00 </td>
-                    </tr>
+					@endforeach
                   </tbody>
                 </table>
               </div>

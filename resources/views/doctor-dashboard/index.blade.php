@@ -95,7 +95,7 @@
                 <table class="table" id="table1">
                   <thead> 
                     <tr class="justify-content-between">
-                      <th>Patient's Name</th>
+                      
                       <th>Date</th>
                       <th>At</th>
                       <th>Message</th>
@@ -105,11 +105,13 @@
                   <tbody>
                     @foreach($app as $app)
 					<tr>
-                      <td>{{$app->name}}</td>
+                      
                       <td>{{$app->date}}</td>
                       <td>{{$app->time}} </td>
                       <td>{{$app->message}} </td>
-                      
+                      <td >
+					<button action="{{ route('Appcancel') }}" value="{{$app->id}}"name="Appid" method="GET" class="btn btn-outline-danger">Cancel</button>
+						</td>
                     </tr>
                     @endforeach
                   </tbody>

@@ -26,12 +26,8 @@ use App\Http\Controllers\Doctor\DoctorController;
 |
 */
 
-Route::get('/patienthistory' , function(){
-    return view('html.patient history');
-})->name('pHistory');
-Route::get('/patientUp' , function(){
-    return view('html.upcoming appointments');
-})->name('pUp');
+
+
 
 
 Route::get('/' , function(){
@@ -178,3 +174,25 @@ Route::prefix('doctor')->name('doctor.')->group(function(){
 Route::get('/send-notification', [NotificationController::class, 'sendCancelNotification']);
 Route::post('/review', [ReviewController::class, 'store'] )->middleware('isPatient')->name('review.store');
 Route::post('/reserve', [AppointmentController::class, 'reserve'] )->middleware('isPatient')->name('appointment.reserve');
+Route::get('/pHistory' ,[AppointmentController::class, 'pHistory'] )->middleware('isPatient')->name('pHistory');
+Route::get('/patientUp' ,[AppointmentController::class, 'Upcom'] )->middleware('isPatient')->name('Upcom');
+
+Route::get('deleteApp/{id}' ,[AppointmentController::class, 'deleteApp'] )->middleware('isPatient')->name('deleteApp');
+
+Route::get('/dAvilable' ,[AppointmentController::class, 'dAvilable'] )->middleware('isPatient')->name('dAvilable');
+Route::get('/dHistory' ,[AppointmentController::class, 'dHistory'] )->middleware('isPatient')->name('dHistory');
+Route::get('/doctorUp' ,[AppointmentController::class, 'dUpcom'] )->middleware('isDoctor')->name('dUpcom');
+
+
+
+
+
+
+
+
+
+
+
+
+
+

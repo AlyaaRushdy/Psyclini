@@ -41,11 +41,11 @@ class ReviewController extends Controller
 			
 			$docu=Doctor::where('id',$a)->first();
 			$rat=$docu->rating;
-			$s=$docu->ratting_times+1;
+			$s=$docu->ratting_times+1;	
 			$docu->rating=$rat+$star;
 			$docu->stars=$rat/$s;
 			$docu->save();
-			
+		
 			return back()->with('status2', 'Your review Was added');
 		}
 		else
@@ -58,10 +58,10 @@ class ReviewController extends Controller
 			
 			$b=$r1->star;
 			$docu=Doctor::where('id',$a)->first()->id;
-			
+		
 			$rat=$docu->rating;
 			$s=$docu->ratting_times;
-			$docu->rating=$rat+$star-$b;
+			$docu->rating=$rat+$star-$b+0.0;
 			$docu->stars=$rat/$s;
 			$docu->save();
 
