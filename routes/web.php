@@ -86,6 +86,14 @@ Route::get('/signUp' , function(){
     return view('html.Sign UP');
 })->name('signUp');
 
+Route::get('/upcomingAppointments' , function(){
+    return view('html.upcoming appointments');
+})->name('upcomingAppointments');
+
+Route::get('/patientHistory' , function(){
+    return view('html.patient history');
+})->name('patientHistory');
+
 Route::post('contact', [ContactController::class, 'store'] )->name('contact.store');
 
 Route::get('blog', [PostController::class, 'index'] )->name('blog');

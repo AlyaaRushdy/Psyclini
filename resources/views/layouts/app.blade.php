@@ -10,26 +10,19 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
- <link href="{{ asset('css/app.css') }}" rel="stylesheet">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../css/icofont.css">
-<link rel="stylesheet" href="../css/signin_signup_style.css">
-<link rel="stylesheet" href="../css/slick-theme.css">
-<link rel="stylesheet" href="../css/slick.css">
-<link rel="stylesheet" href="../css/home_style.css"> 
- <link rel="stylesheet" href="../css/bootstrap.min.css"> 
-<link rel="icon" href="../img/icon.png">
+    <link rel="stylesheet" href="../css/home_style.css"> 
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="icon" href="../img/icon.png">
 
 
 </head>
-<body id="bootstrap-overrides top">
+<body >
 
 
   <!--nav bar begin-->
@@ -82,6 +75,8 @@
                 </a>
                   <ul class="dropdown-menu " aria-labelledby="dropdown03">
                     <li><a href="{{route('home')}}" class="dropdown-item">Welcome, {{ Auth::guard('patient')->user()->name}}</a></li>
+                    <li><a class="dropdown-item" href="{{route('patientHistory')}}">History</a></li>
+                    <li><a class="dropdown-item" href="{{route('upcomingAppointments')}}">Upcoming Appointments</a></li>
                     <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
                       Logout
                         </a>
@@ -179,6 +174,7 @@
 
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.bundle.js"></script>
   <script src="../js/slick.min.js"></script>
   <script src="../js/script.js"></script>
 </body>

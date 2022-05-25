@@ -61,8 +61,6 @@
                                             </div>          
                                         </div>
                                     </form>
-                                    <p class="text-center sign-color" >You Are a Therapist ?<a href="{{ route('doctor.signin') }}"> Sign In Here</a></p>
-                                    <p class="text-center sign-color" >Not a Member ?<a href="{{ route('signUp') }}"> Sign Up</a></p>
                                 </div>
                         </div>
                     </div>
