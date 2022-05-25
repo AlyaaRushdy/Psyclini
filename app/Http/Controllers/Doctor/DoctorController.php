@@ -106,4 +106,19 @@ public function dAvilable()
 		$appointment = Appointment::where('doctor_id',$s)->where('patient_status',0)->get();
 		return view('doctor-dashboard.avillable appointments', compact('appointment'));
     }
+public function AApp($id)
+    {
+		$appointment1=Appointment::where('id',$id)->first();
+		$appointment1->doctor_status=1;
+		$appointment1->save();
+		return back()->with('status2', 'Availlable done');
+    }
+public function NAApp($id)
+    {
+		
+		$appointment1=Appointment::where('id',$id)->first();
+		$appointment1->doctor_status=0;
+		$appointment1->save();
+		return back()->with('status2', 'Not Availlable done');
+    }	
 }

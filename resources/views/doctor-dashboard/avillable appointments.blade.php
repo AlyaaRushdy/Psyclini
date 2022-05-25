@@ -1,6 +1,5 @@
 {{-- @extends('layouts.doctorApp')
 @section('content') --}}
-{{-- @if (Auth::guard('doctor')->check()){ --}}
 
   <!DOCTYPE html>
   <html lang="en">
@@ -41,23 +40,23 @@
                 
               <li class="sidebar-item has-sub">
                 <a href="#" class='sidebar-link'>
-                  <span>Available Appointments</span>
+                  <span>Appointments</span>
                 </a>
-      
-              </li>
-              
-              <li class="sidebar-item has-sub">
-                <a href="#" class='sidebar-link active'>
-                  <span>Publish</span>
-                </a>
-                <ul class="submenu ">
-                  <li class="submenu-item ">
-                    <a href="{{ route('doctor.post') }}">Post</a>
+				<ul class="submenu ">
+                  <li class="submenu-item {{ Request::is('doctor-index') ? 'active' : '' }}">
+                    <a href="{{ route('dHistory') }}">History</a>
                   </li>
-                  <li class="submenu-item {{ Request::is('publish article') ? 'active' : '' }} ">
-                    <a href="{{ route('doctor.article') }}">Article</a>
+                  <li class="submenu-item{{ Request::is('doctor-index') ? 'active' : '' }}">
+                    <a href="{{ route('dAvilable') }}">Available</a>
                   </li>
                 </ul>
+              </li>
+              
+              <li class="sidebar-item">
+                <a href="{{ route('doctor.post') }}" class='sidebar-link active'>
+                  <span>Publish posts</span>
+                </a>
+             
               </li>
   
               <li class="sidebar-item {{ Request::is('/') ? 'active' : '' }} ">
@@ -96,22 +95,24 @@
                   <thead> 
                     <tr class="justify-content-between">
                       
-                      <th>Date</th>
+                      <th>Day</th>
                       <th>At</th>
-                      <th>Message</th>
-						<th>Cancel</th>
+                      <th>Availlable</th>
+						<th>Not Availlable</th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($app as $app)
+                    @foreach($appointment as $appointment)
 					<tr>
                       
-                      <td>{{$app->date}}</td>
-                      <td>{{$app->time}} </td>
-                      <td>{{$app->message}} </td>
+                      <td>{{$appointment->day}}</td>
+                      <td>{{$appointment->time}} </td>
                       <td >
-					<button action="{{ route('Appcancel') }}" value="{{$app->id}}"name="Appid" method="GET" class="btn btn-outline-danger">Cancel</button>
-						</td>
+					<button  class="btn btn-outline-success"><a href="{{url('AApp/'.$appointment->id)}}">Availlable</a></button>
+					</td>
+                      <td >
+					<button  class="btn btn-outline-danger"><a href="{{url('NAApp/'.$appointment->id)}}">Not</a></button>
+					</td>
                     </tr>
                     @endforeach
                   </tbody>
@@ -138,13 +139,19 @@
         ]
       });
     </script>
+	
+<script src="../js/sweetalert.min.js"></script>
+    
+    <!-- Scripts -->
+    @if (Session('status2'))
+    <script>
+        swal("{{ Session('status2') }}");
+    </script>
+	@endif
   </body>
   
   </html>
   
-{{-- 
-}
-   
- @endif --}}
-
+{{-- }
+@endif --}}
 {{-- @endsection --}}

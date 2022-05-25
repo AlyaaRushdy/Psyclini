@@ -44,10 +44,10 @@
                   <span>Appointments</span>
                 </a>
 				<ul class="submenu ">
-                  <li class="submenu-item ">
+                  <li class="submenu-item {{ Request::is('doctor-index') ? 'active' : '' }}">
                     <a href="{{ route('dHistory') }}">History</a>
                   </li>
-                  <li class="submenu-item">
+                  <li class="submenu-item{{ Request::is('doctor-index') ? 'active' : '' }}">
                     <a href="{{ route('dAvilable') }}">Available</a>
                   </li>
                 </ul>
@@ -90,7 +90,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4 ml-3">
             <div class="card-body">
-              <h4 class="mb-3 mt-2 pb-2">Your Appointments This Week</h4>
+              <h4 class="mb-3 mt-2 pb-2">Your Booked Appointments This Week</h4>
               <div class="table-responsive ">
                 <table class="table" id="table1">
                   <thead> 
@@ -138,6 +138,15 @@
         ]
       });
     </script>
+	
+<script src="../js/sweetalert.min.js"></script>
+    
+    <!-- Scripts -->
+    @if (Session('status2'))
+    <script>
+        swal("{{ Session('status2') }}");
+    </script>
+	@endif
   </body>
   
   </html>
