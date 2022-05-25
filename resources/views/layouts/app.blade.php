@@ -82,7 +82,9 @@
                 </a>
                   <ul class="dropdown-menu " aria-labelledby="dropdown03">
                     <li><a href="{{route('home')}}" class="dropdown-item">Welcome, {{ Auth::guard('patient')->user()->name}}</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
+                    <li><a href="{{route('pHistory')}}" class="dropdown-item">History</a></li>
+					<li><a href="{{route('pUp')}}" class="dropdown-item">Upcoming Appointment </a></li>
+					<li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
                       Logout
                         </a>
                     </li>
@@ -107,7 +109,7 @@
                 </a>
                   <ul class="dropdown-menu " aria-labelledby="dropdown03">
                     <li><a href="{{route('home')}}" class="dropdown-item">Welcome, {{ Auth::guard('doctor')->user()->name}}</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
+					<li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
                       Logout
                         </a>
                     </li>

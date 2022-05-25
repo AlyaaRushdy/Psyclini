@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
@@ -24,6 +25,13 @@ use App\Http\Controllers\Doctor\DoctorController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/patienthistory' , function(){
+    return view('html.patient history');
+})->name('pHistory');
+Route::get('/patientUp' , function(){
+    return view('html.upcoming appointments');
+})->name('pUp');
 
 
 Route::get('/' , function(){
@@ -168,4 +176,5 @@ Route::prefix('doctor')->name('doctor.')->group(function(){
 
 
 Route::get('/send-notification', [NotificationController::class, 'sendCancelNotification']);
-Route::post('/review', [ReviewController::class, 'store'] )->middleware('isPatient')->name('reviews.store');
+Route::post('/review', [ReviewController::class, 'store'] )->middleware('isPatient')->name('review.store');
+Route::post('/reserve', [AppointmentController::class, 'reserve'] )->middleware('isPatient')->name('appointment.reserve');

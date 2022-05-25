@@ -40,17 +40,10 @@
               </li>
                 
               <li class="sidebar-item has-sub">
-                <a href="#" class='sidebar-link'>
-                  <span>Appointments</span>
+                <a href="{{ route('drAvilable') }}" class='sidebar-link'>
+                  <span>Available Appointments</span>
                 </a>
-                <ul class="submenu ">
-                  <li class="submenu-item {{ Request::is('requests modifications') ? 'active' : '' }} ">
-                    <a href="{{ route('doctor.modifications') }}">Request Modifications</a>
-                  </li>
-                  <li class="submenu-item {{ Request::is('requests status') ? 'active' : '' }} ">
-                    <a href="{{ route('doctor.status') }}">Requests' Status</a>
-                  </li>
-                </ul>
+      
               </li>
               
               <li class="sidebar-item has-sub">
@@ -104,117 +97,21 @@
                     <tr class="justify-content-between">
                       <th>Patient's Name</th>
                       <th>Date</th>
-                      <th>From</th>
-                      <th>To</th>
-                      <th>Room No.</th>
+                      <th>At</th>
+                      <th>Message</th>
+						<th>Cancel</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
+                    @foreach($app as $app)
+					<tr>
+                      <td>{{$app->name}}</td>
+                      <td>{{$app->date}}</td>
+                      <td>{{$app->time}} </td>
+                      <td>{{$app->message}} </td>
+                      
                     </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>Sahar Khaled</td>
-                      <td>13/4/2022</td>
-                      <td>10:00 </td>
-                      <td>10:30 </td>
-                      <td>2</td>
-                    </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>

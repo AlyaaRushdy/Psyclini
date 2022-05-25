@@ -38,30 +38,15 @@
           
         <li class="sidebar-item has-sub">
           <a href="#" class='sidebar-link'>
-            <span>Appointments</span>
+            <span>Available Appointments</span>
           </a>
-          <ul class="submenu ">
-            <li class="submenu-item {{ Request::is('requests modifications') ? 'active' : '' }} ">
-              <a href="{{ route('doctor.modifications') }}">Request Modifications</a>
-            </li>
-            <li class="submenu-item {{ Request::is('requests status') ? 'active' : '' }} ">
-              <a href="{{ route('doctor.status') }}">Requests' Status</a>
-            </li>
-          </ul>
+          
         </li>
         
         <li class="sidebar-item has-sub">
-          <a href="#" class='sidebar-link'>
-            <span>Publish</span>
+          <a href="{{ route('doctor.article') }}" class='sidebar-link'>
+            <span>Publish Article</span>
           </a>
-          <ul class="submenu ">
-            <li class="submenu-item {{ Request::is('create post') ? 'active' : '' }} ">
-              <a href="{{ route('doctor.post') }}">Post</a>
-            </li>
-            <li class="submenu-item {{ Request::is('publish article') ? 'active' : '' }} ">
-              <a href="{{ route('doctor.article') }}">Article</a>
-            </li>
-          </ul>
         </li>
 
         <li class="sidebar-item {{ Request::is('/') ? 'active' : '' }} ">
