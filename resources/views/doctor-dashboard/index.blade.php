@@ -40,24 +40,24 @@
               </li>
                 
               <li class="sidebar-item has-sub">
-                <a href="{{ route('drAvilable') }}" class='sidebar-link'>
-                  <span>Available Appointments</span>
+                <a href="#" class='sidebar-link'>
+                  <span>Appointments</span>
                 </a>
-      
-              </li>
-              
-              <li class="sidebar-item has-sub">
-                <a href="#" class='sidebar-link active'>
-                  <span>Publish</span>
-                </a>
-                <ul class="submenu ">
+				<ul class="submenu ">
                   <li class="submenu-item ">
-                    <a href="{{ route('doctor.post') }}">Post</a>
+                    <a href="{{ route('dHistory') }}">History</a>
                   </li>
-                  <li class="submenu-item {{ Request::is('publish article') ? 'active' : '' }} ">
-                    <a href="{{ route('doctor.article') }}">Article</a>
+                  <li class="submenu-item">
+                    <a href="{{ route('dAvilable') }}">Available</a>
                   </li>
                 </ul>
+              </li>
+              
+              <li class="sidebar-item">
+                <a href="{{ route('doctor.post') }}" class='sidebar-link active'>
+                  <span>Publish posts</span>
+                </a>
+             
               </li>
   
               <li class="sidebar-item {{ Request::is('/') ? 'active' : '' }} ">
@@ -103,15 +103,15 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($app as $app)
+                    @foreach($appointment as $appointment)
 					<tr>
                       
-                      <td>{{$app->date}}</td>
-                      <td>{{$app->time}} </td>
-                      <td>{{$app->message}} </td>
+                      <td>{{$appointment->date}}</td>
+                      <td>{{$appointment->time}} </td>
+                      <td>{{$appointment->message}} </td>
                       <td >
-					<button action="{{ route('Appcancel') }}" value="{{$app->id}}"name="Appid" method="GET" class="btn btn-outline-danger">Cancel</button>
-						</td>
+					<button  class="btn btn-outline-danger"><a href="{{url('deleteApp/'.$appointment->id)}}">Cancel</a></button>
+					</td>
                     </tr>
                     @endforeach
                   </tbody>

@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Doctor;
 
 use App\Models\Post;
 use App\Models\Doctor;
-
+use App\Models\Appointment;
+use App\Models\AppointmentDoctor;
+use App\Http\Controllers\AppointmentController;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -80,5 +82,28 @@ class DoctorController extends Controller
      return redirect()->back()->with('status', 'Your Post Was Sent');
      
 
-    } 
+    }
+	public function index()
+    {
+		$s=Auth::guard('doctor')->user()->id;
+		$d=date("Y.m.d");
+		$appointment = AppointmentDoctor::where('doctor_id',$s)->where('date','>=',$d)->orderBy('date','asc')->get();
+		return view('doctor-dashboard.index', compact('appointment'));
+    }
+	
+public function dHistory()
+    {
+
+        $s=Auth::guard('doctor')->user()->id;
+		$d=date("Y.m.d");
+		$appointment = AppointmentDoctor::where('doctor_id',$s)->where('date','<=',$d)->orderBy('date','asc')->get();
+		return view('doctor-dashboard.history appointments', compact('appointment'));
+    }
+public function dAvilable()
+    {
+		$s=Auth::guard('doctor')->user()->id;
+
+		$appointment = Appointment::where('doctor_id',$s)->where('patient_status',0)->get();
+		return view('doctor-dashboard.avillable appointments', compact('appointment'));
+    }
 }
