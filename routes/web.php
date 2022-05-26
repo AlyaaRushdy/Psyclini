@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PatientController;
@@ -11,7 +12,6 @@ use App\Http\Controllers\MyDoctorController;
 use App\Http\Controllers\SecretaryController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\Doctor\DoctorController;
 
 
@@ -25,6 +25,9 @@ use App\Http\Controllers\Doctor\DoctorController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
 
 
 Route::get('/' , function(){
@@ -63,6 +66,16 @@ Route::get('test4' , function(){
     return view('html.test4');
 })->name('test4');
 
+Route::get('article1' , function(){
+    return view('html.article1');
+})->name('article1');
+
+Route::get('article3' , function(){
+    return view('html.article3');
+})->name('article3');
+Route::get('article2' , function(){
+    return view('html.article2');
+})->name('article2');
 
 Route::get('test' , function(){
     return view('html.test');
@@ -105,18 +118,6 @@ Route::post('loginhome' , [PatientController::class, 'postLogin'])->name('patien
 
 Auth::routes();
 
-Route::get('/send-notification', [NotificationController::class, 'sendCancelNotification']);
-Route::post('/review', [ReviewController::class, 'store'] )->middleware('isPatient')->name('review.store');
-Route::post('/reserve', [AppointmentController::class, 'reserve'] )->middleware('isPatient')->name('appointment.reserve');
-Route::get('/pHistory' ,[AppointmentController::class, 'pHistory'] )->middleware('isPatient')->name('pHistory');
-Route::get('/patientUp' ,[AppointmentController::class, 'Upcom'] )->middleware('isPatient')->name('Upcom');
-
-Route::get('deleteApp/{id}' ,[AppointmentController::class, 'deleteApp'] )->middleware('isPatient')->name('deleteApp');
-
-Route::get('/dAvilable' ,[AppointmentController::class, 'dAvilable'] )->middleware('isPatient')->name('dAvilable');
-Route::get('/dHistory' ,[AppointmentController::class, 'dHistory'] )->middleware('isPatient')->name('dHistory');
-Route::get('/doctorUp' ,[AppointmentController::class, 'dUpcom'] )->middleware('isDoctor')->name('dUpcom');
-
 
 
 Route::prefix('admin')->group(function(){
@@ -157,7 +158,8 @@ Route::prefix('doctor')->name('doctor.')->group(function(){
        Route::middleware(['auth:doctor','PreventBackHistory'])->group(function(){
             Route::view('/home','dashboard.doctor.home')->name('home');
             // Route::get('/index', [DoctorController::class, 'doctor_index'])->name('index');
-           
+            
+			
             Route::view('/requests-status', 'doctor-dashboard.requests status')->name('status');
             Route::view('/requests-modifications', 'doctor-dashboard.request modifications')->name('modifications');
             Route::view('publish article', 'doctor-dashboard.publish article')->name('article');
@@ -168,18 +170,28 @@ Route::prefix('doctor')->name('doctor.')->group(function(){
 
 });
 
+
+
 Route::get('/send-notification', [NotificationController::class, 'sendCancelNotification']);
 Route::post('/review', [ReviewController::class, 'store'] )->middleware('isPatient')->name('review.store');
 Route::post('/reserve', [AppointmentController::class, 'reserve'] )->middleware('isPatient')->name('appointment.reserve');
 Route::get('/pHistory' ,[AppointmentController::class, 'pHistory'] )->middleware('isPatient')->name('pHistory');
 Route::get('/patientUp' ,[AppointmentController::class, 'Upcom'] )->middleware('isPatient')->name('Upcom');
 
-Route::get('deleteApp/{id}' ,[AppointmentController::class, 'deleteApp'] )->middleware('isPatient')->name('deleteApp');
+Route::get('deleteApp/{id}' ,[AppointmentController::class, 'deleteApp'] )->name('deleteApp');
 
 Route::get('/dAvilable' ,[DoctorController::class, 'dAvilable'] )->name('dAvilable');
 Route::get('/dHistory' ,[DoctorController::class, 'dHistory'] )->name('dHistory');
 Route::get('/index',[DoctorController::class, 'index'])->name('doctor.index');
 Route::get('AApp/{id}' ,[DoctorController::class, 'AApp'] )->name('AApp');
 Route::get('NAApp/{id}' ,[DoctorController::class, 'NAApp'] )->name('NAApp');
+
+
+
+
+
+
+
+
 
 

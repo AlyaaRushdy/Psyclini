@@ -97,6 +97,7 @@
                       
                       <th>Day</th>
                       <th>At</th>
+					  <th>Status</th>
                       <th>Availlable</th>
 						<th>Not Availlable</th>
                     </tr>
@@ -107,7 +108,13 @@
                       
                       <td>{{$appointment->day}}</td>
                       <td>{{$appointment->time}} </td>
-                      <td >
+					  @if($appointment->doctor_status)
+					  <td>Availlable</td>
+                      @else
+						  <td>Not Availlable</td>
+					  @endif
+					  
+					  <td >
 					<button  class="btn btn-outline-success"><a href="{{url('AApp/'.$appointment->id)}}">Availlable</a></button>
 					</td>
                       <td >

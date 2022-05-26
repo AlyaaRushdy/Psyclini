@@ -99,14 +99,12 @@ class SecretaryController extends Controller
             'phone' => 'required|unique:doctors,phone|numeric',
             'birth_date' => 'required|before:today',
             'email'=> 'required|email|unique:doctors,email',
-            'password' => 'required|min:5',
-            'gender' => 'required',
-            'education' => 'required',
-            'session_fees'=> 'required|numeric|max:10',
-            'experience' => 'required|numeric|max:10',
-
-
-        ]);
+            'password' => 'required|min:5'
+        ],[
+            'password.min' => '55555555',
+            'birth_date.before' => 'aaaaaaaa'
+        ]
+        );
         
         $sec= new Doctor();
 
@@ -131,7 +129,7 @@ class SecretaryController extends Controller
          $sec->experince_years = $request->input('experience');
          $sec->education = $request->input('education');               
          $sec->rating = null;               
-         $sec->gender = $request->input('gender');              
+         $sec->gender = null;               
          $done = $sec->save();       
          if($done)
          {

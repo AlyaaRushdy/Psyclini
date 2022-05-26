@@ -70,7 +70,7 @@ public function appup($app )
 				$var->aoppintment_status=0;
 				$var->save();
 				$p=Appointment::updateOrCreate(['id'=>$app],['doctor_status'=>0],['patient_status'=>1]);				
-				return back()->with('status2', 'The appointment has been reserved');
+				return back()->with('status2', 'The appointment has been reserved at');
 				
 			}
 				
@@ -92,7 +92,7 @@ public function pHistory()
 
         $s=Auth::guard('patient')->user()->id;
 		$d=date("Y.m.d");
-		$appointment = AppointmentDoctor::where('patient_id',$s)->where('date','<',$d)->orderBy('date','asc')->get();
+		$appointment = AppointmentDoctor::where('patient_id',$s)->where('date','<=',$d)->orderBy('date','asc')->get();
 		return view('html.patient history', compact('appointment'));
     }
 

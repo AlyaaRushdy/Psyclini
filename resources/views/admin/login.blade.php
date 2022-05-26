@@ -11,9 +11,8 @@
         <link rel="stylesheet" href="../css/icofont.css">
         <link rel="stylesheet" href="../css/signin_signup_style.css">
         <link rel="stylesheet" href="../css/home_style.css">
-        <link rel="icon" href="../img/icon.png">
-        <link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="icon" href="../img/icon.png">
     </head>
 	<body>
       
@@ -34,17 +33,32 @@
                                         <div class="form-group mt-3">
                                             <input type="text" class="form-control" name="email" required>
                                             <label class="form-control-placeholder" for="Username" >E-mail</label> 
-                                            <span class="text-danger">@error('email'){{ $message }}@enderror</span>
+                                            @if ($errors->has('email'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif
 										</div>
                                         <div class="form-group">
                                             <input id="password-field" type="password" class="form-control" name = 'password' required>
                                             <label class="form-control-placeholder" for="password">Password</label>
                                             <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                                            <span class="text-danger">@error('password'){{ $message }}@enderror</span>
+                                            @if ($errors->has('password'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                        @endif
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="form-control btn btn-primary rounded-pill submit px-3">Sign In</button>
-                                        </div>       
+                                        </div>
+                                        <div class="form-group d-md-flex">
+                                            <div class="w-50 text-left">
+                                                <label class="checkbox-wrap checkbox-primary mb-0"> Remember Me
+                                                    <input type="checkbox" >
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>          
                                         </div>
                                     </form>
                                     <p class="text-center sign-color" >You Are a Therapist ?<a href="{{ route('doctor.signin') }}"> Sign In Here</a></p>
@@ -66,7 +80,7 @@
               </div>
           
               <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted a-no-decor bi" href="https://github.com/AlyaaRushdy/Psyclini"><i class="icofont-github"></i></a></li>
+                <li class="ms-3"><a class="text-muted a-no-decor bi" href="https://github.com/AlyaaRushdy/Psyclini/tree/Final"><i class="icofont-github"></i></a></li>
                 <li class="ms-3"><a class="text-muted a-no-decor bi" href="https://www.facebook.com/FacultyofScienceASU/"><i class="icofont-facebook"></i></a></li>
               </ul>
             </footer>

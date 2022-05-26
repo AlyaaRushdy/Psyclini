@@ -72,14 +72,6 @@
               <span class="text-danger">@error('birth_date'){{ $message }}@enderror</span>
             </div>
             <div class="form-floating mb-3">
-              <select class="form-select black-title" id="floatingSelectt" name="gender" aria-label="Floating label select example">
-                <option class="op" value="_none"  disabled selected>Gender</option>
-                <option class="op" value="Male">Male</option>
-                <option class="op" value="Female">Female</option>
-              </select>
-              <label for="floatingSelectt" class="required">Gender</label>
-            </div>
-            <div class="form-floating mb-3">
               <select class="form-select black-title" id="floatingSelect" name="cate" aria-label="Floating label select example">
                   <option class="op" value="Child and Adolescence Disorders">Child and Adolescence Disorders</option>
                   <option class="op" value="General Psychiatry">General Psychiatry</option>
@@ -130,7 +122,6 @@
 
   <script src="../js/bootstrap.bundle.js"></script>
   <script src="../js/admin main script.js"></script>
-  <script src="../js/date.js"></script>
 
 </body>
 </html> 

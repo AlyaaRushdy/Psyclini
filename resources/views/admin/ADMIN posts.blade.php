@@ -56,13 +56,14 @@
                        <td>{{ $post->created_at->diffForHumans() }}</td>
                     @endif
                     <td>
-                      <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal" data-bs-target="#post-modal{{ $post->id }}"> View </button>
+                      <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal" data-bs-target="#post-modal"> View </button>
                     </td>
                     <td>
                       <form action="{{ route('admin.destroy' , $post->id) }}" method="POST" enctype="multipart/form-data">
                         @method('DELETE')
                         @csrf
-                      <button type="submit" class="btn btn-outline-danger mb-2"> Delete</button>
+                        <a class="btn btn-outline-success mb-2 mr-2">Approve</a>
+                      <button type="submit" class="btn btn-outline-danger mb-2"> Disapprove</button>
                       </form>
                     </td>
                   </tr>
@@ -72,8 +73,8 @@
               </table>
             </div>
 
-          @foreach ($posts as $post)
-              <div class="modal fade" id="post-modal{{ $post->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+            <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                   <div class="modal-header ">
@@ -86,28 +87,22 @@
                       </div>
                       <div class="col-lg-9 pb-1">
                         <label >
-                          {{ $post->body }}
+                          Some consultants are employed indirectly by the client via a consultancy staffing company, a company that provides consultants on an agency basis.
+                          Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
                         </label>
                       </div>
                       <div class="col-lg-3 pl-2">
                         <label >Department : </label>
                       </div>
                       <div class="col-lg-9 pb-1">
-                        <label > {{ $post->speciality }} </label>
+                        <label > Child and Adolescence Disorders </label>
                       </div>
                       <div class="col-lg-3 pl-2">
                         <label > Image (if exists): </label>
                       </div>
-                      @if ($post->image !=Null)
-                          
                       <div class="col-lg-4 pb-1">
-                        <img src="{{ asset('images/'. $post->image) }}" ></img >
+                        <img src="../img/banner.png" ></img >
                       </div>
-                    @else
-                        <div class="col-lg-9 pb-1">
-                          <label >This Post Does Not Have An Image </label>
-                        </div>
-                    @endif
                     </div>
                   </div>
                   <div class="modal-footer">
@@ -118,8 +113,6 @@
                 </div>
               </div>
             </div>
-            @endforeach
-
 
           </div>
         </div>
