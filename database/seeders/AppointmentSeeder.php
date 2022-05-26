@@ -283,7 +283,7 @@ class AppointmentSeeder extends Seeder
 \App\Models\Appointment::create([
           
             'time'=>'17:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'a',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -292,7 +292,7 @@ class AppointmentSeeder extends Seeder
 \App\Models\Appointment::create([
     
             'time'=>'18:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'a',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -301,7 +301,7 @@ class AppointmentSeeder extends Seeder
 \App\Models\Appointment::create([
            
             'time'=>'19:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'a',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -310,7 +310,7 @@ class AppointmentSeeder extends Seeder
 \App\Models\Appointment::create([
           
             'time'=>'20:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'a',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -319,7 +319,7 @@ class AppointmentSeeder extends Seeder
 \App\Models\Appointment::create([
         
             'time'=>'21:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'a',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -593,7 +593,7 @@ class AppointmentSeeder extends Seeder
 \App\Models\Appointment::create([
          
             'time'=>'17:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'b',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -602,7 +602,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
            
             'time'=>'18:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'b',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -611,7 +611,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
           
             'time'=>'19:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'b',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -620,7 +620,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
            
             'time'=>'20:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'b',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -629,7 +629,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
         
             'time'=>'21:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'b',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -900,7 +900,7 @@ class AppointmentSeeder extends Seeder
 \App\Models\Appointment::create([
      
             'time'=>'17:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'c',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -909,7 +909,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
        
             'time'=>'18:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'c',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -918,7 +918,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
        
             'time'=>'19:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'c',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -927,7 +927,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
        
             'time'=>'20:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'c',
             'patient_status' => '0',
             'doctor_status'=>'1',
@@ -936,7 +936,7 @@ class AppointmentSeeder extends Seeder
 			\App\Models\Appointment::create([
 
             'time'=>'21:00',
-            'day'=>'frdoctor_iday',
+            'day'=>'friday',
 			'hall'=>'c',
             'patient_status' => '0',
             'doctor_status'=>'1',

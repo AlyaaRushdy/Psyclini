@@ -92,7 +92,7 @@ public function pHistory()
 
         $s=Auth::guard('patient')->user()->id;
 		$d=date("Y.m.d");
-		$appointment = AppointmentDoctor::where('patient_id',$s)->where('date','<=',$d)->orderBy('date','asc')->get();
+		$appointment = AppointmentDoctor::where('patient_id',$s)->where('date','<',$d)->orderBy('date','asc')->get();
 		return view('html.patient history', compact('appointment'));
     }
 

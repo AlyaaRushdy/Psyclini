@@ -16,7 +16,7 @@ class ReviewController extends Controller
 	    public function store(StoreDoctorRequest $request  )
     {
 		$r=Auth::guard('patient')->user()->id;
-		
+		$d=date("Y.m.d");
 		$a=$request->input('did');
 	
 		$rev=$request->input('rev');
@@ -24,7 +24,7 @@ class ReviewController extends Controller
 		
 		$r1=Review::where('patient_id',$r)->where('doctor_id',$a)->first();
 		
-		$r2=AppointmentDoctor::where('patient_id',$r)->where('doctor_id',$a)->first();
+		$r2=AppointmentDoctor::where('patient_id',$r)->where('doctor_id',$a)->where('date','<',$d)->first();
 		
 		$doc=Doctor::where('id',$a)->first();
 		
