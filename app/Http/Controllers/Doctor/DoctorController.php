@@ -45,7 +45,7 @@ class DoctorController extends Controller
            'email'=>'required|email|exists:doctors,email',
            'password'=>'required|min:5|max:30'
         ],[
-            'email.exists'=>'This email is not exists in doctors table'
+            'email.exists'=>'This email is not exist'
         ]);
 
         $creds = $request->only('email','password');
@@ -53,7 +53,7 @@ class DoctorController extends Controller
         if( Auth::guard('doctor')->attempt($creds) ){
             return redirect()->route('doctor.index');
         }else{
-            return redirect()->route('doctor.login')->with('fail','Incorrect Credentials');
+            return redirect()->route('doctor.login')->with('fail','Incorrect Password');
         }
     }
 
@@ -82,8 +82,8 @@ class DoctorController extends Controller
      return redirect()->back()->with('status', 'Your Post Was Sent');
      
 
-    }
-	public function index()
+    } 
+		public function index()
     {
 		$s=Auth::guard('doctor')->user()->id;
 		$d=date("Y.m.d");
@@ -121,4 +121,6 @@ public function NAApp($id)
 		$appointment1->save();
 		return back()->with('status2', 'Not Availlable done');
     }	
+
+
 }

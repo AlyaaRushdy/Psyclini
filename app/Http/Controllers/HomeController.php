@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Review;
+
 class HomeController extends Controller
 {
     /**
@@ -21,11 +21,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(Review  $review)
+    public function index()
     {
-		
-		
-		$review = Review::where('star','>=',4)->whereNotNull('massege')->take(6)->get();
-        return view('home',compact('review'));
+        return view('home');
     }
 }

@@ -25,44 +25,44 @@
           </div>
           <div class="sidebar-menu">
             <ul class="menu">            
-              <li class="sidebar-item active ">
+              <li class="sidebar-item {{ Request::is('admin/index') ? 'active' : '' }}">
                 <a href="{{ route('admin.index') }}" class='sidebar-link'>
                   <span>Dashboard</span>
                 </a>
               </li>
                 
-              <li class="sidebar-item has-sub">
+              <li class="sidebar-item has-sub {{ Request::is('admin/modify') ? 'active' : '' }}">
                 <a href="#" class='sidebar-link'>
                   <span>Appointments</span>
                 </a>
-                <ul class="submenu ">
-                   <li class="submenu-item ">
+                <ul class="submenu {{ Request::is('admin/modify') ? 'active' : '' }}">
+                   <li class="submenu-item {{ Request::is('admin/modify') ? 'active' : '' }} ">
                     <a href="{{ route('admin.modify.appoinments') }}">Modify Appointments</a>
                   </li>
                 </ul>
               </li>
               
-              <li class="sidebar-item has-sub">
+              <li class="sidebar-item has-sub {{ Request::is('admin/posts') ? 'active' : ''}} {{Request::is('admin/requests') ? 'active' : '' }} ">
                 <a href="#" class='sidebar-link'>
-                  <span>Approve</span>
+                  <span>Show</span>
                 </a>
-                <ul class="submenu ">
-                  <li class="submenu-item ">
+                <ul class="submenu {{ Request::is('admin/posts') ? 'active' : ''}} {{Request::is('admin/requests') ? 'active' : '' }} ">
+                  <li class="submenu-item  {{ Request::is('admin/posts') ? 'active' : ''}} ">
                     <a href="{{ route('admin.show.posts') }}">Posts</a>
                   </li>
-                  <li class="submenu-item ">
+                  <li class="submenu-item {{Request::is('admin/requests') ? 'active' : '' }} ">
                     <a href="{{ route('admin.approve.requests') }}">Doctors' Requests</a>
                   </li>
                 </ul>
               </li>
   
-              <li class="sidebar-item ">
+              <li class="sidebar-item {{ Request::is('admin/contact') ? 'active' : ''}} ">
                 <a href="{{ route('admin.contact.response') }}" class="sidebar-link"> 
                   <span>Contact Us Responses</span>
                 </a>
               </li>
               
-              <li class="sidebar-item">
+              <li class="sidebar-item {{ Request::is('admin/create') ? 'active' : ''}} ">
                 <a href="{{ route('admin.createDRAccount') }}" class="sidebar-link"> 
                   <span>Create Doctor's Account</span>
                 </a>

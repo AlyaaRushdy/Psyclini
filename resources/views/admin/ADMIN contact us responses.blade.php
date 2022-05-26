@@ -43,7 +43,7 @@
                         <td>{{ $contact->phone }}</td>
                         <td>{{ $contact->email }}</td>
                         <td>
-                          <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal" data-bs-target="#post-modal"> View </button>
+                          <button type="button" class="btn btn-outline-primary block" data-bs-toggle="modal" data-bs-target="#post-modal{{ $contact->id }}"> View </button>
                         </td>
                       </tr>
                       @endforeach
@@ -51,7 +51,8 @@
                 </table>
             </div>
 
-            <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            @foreach ($contacts as $contact)
+            <div class="modal fade" id="post-modal{{ $contact->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                   <div class="modal-header ">
@@ -62,29 +63,28 @@
                       <div class="col-lg-3 pl-2">
                         <label > Message : </label>
                       </div>
-                      @foreach ($contacts as $contact)
                       
                       <div class="col-lg-9 pb-1">
                         <label >
                           {{ $contact->message }}
                         </label>
                       </div>
-                      @endforeach
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-primary ml-1" data-bs-dismiss="modal">
-                          <span class="d-none d-sm-block">OK</span>
-                        </button>
-                      </div>
+                        <span class="d-none d-sm-block">OK</span>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              
             </div>
+            @endforeach
+            
+          </div>
         </div>
       </div>
-
+      
     </div>
   </div>
 

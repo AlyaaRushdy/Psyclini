@@ -141,7 +141,3 @@ thead {
     bottom: 1.5rem;
     margin-left: 4rem;
 }
-.required:after {
-    content:" *";
-    color: red;
-  }

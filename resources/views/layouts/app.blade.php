@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
- <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+ {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/icofont.css">
 <link rel="stylesheet" href="../css/signin_signup_style.css">
@@ -36,7 +36,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navigation" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="index.html">
           <img src="../img/logo.png" alt="" class="img-fluid" >
         </a>
 
@@ -83,10 +83,9 @@
                   <ul class="dropdown-menu " aria-labelledby="dropdown03">
                     <li><a href="{{route('home')}}" class="dropdown-item">Welcome, {{ Auth::guard('patient')->user()->name}}</a></li>
                     <li><a href="{{route('pHistory')}}" class="dropdown-item">History</a></li>
-					<li><a href="{{route('Upcom')}}" class="dropdown-item">Upcoming Appointment </a></li>
-					<li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
-                      Logout
-                        </a>
+                    <li><a href="{{route('Upcom')}}" class="dropdown-item">Upcoming Appointment </a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
+                      Logout</a>
                     </li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
@@ -109,11 +108,36 @@
                 </a>
                   <ul class="dropdown-menu " aria-labelledby="dropdown03">
                     <li><a href="{{route('home')}}" class="dropdown-item">Welcome, {{ Auth::guard('doctor')->user()->name}}</a></li>
-					<li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
                       Logout
                         </a>
                     </li>
                     <form id="logout-form" action="{{ route('doctor.logout') }}" method="GET" style="display: none;">
+                      @csrf
+                  </form>
+                  </ul>
+                </li>
+
+                @elseif (Auth::guard('admin')->check() )
+                    <li class="nav-item dropdown user-dropdown">
+                      <a class="nav-link dropdown-toggle" href="{{ route('home') }}"  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @if(Auth::guard('admin')->user()->img == NUll)
+                    
+                      <span><img src="{{ asset('images/patients/123.jpg') }}" width="50" height="50" alt=""></span>
+                    
+                    @else
+
+                      <span><img src="{{ url('images/sec/' . Auth::guard('admin')->user()->img) }}" width="50" height="50" alt=""></span>
+                    
+                    @endif
+                </a>
+                  <ul class="dropdown-menu " aria-labelledby="dropdown03">
+                    <li><a href="{{route('home')}}" class="dropdown-item">Welcome, {{ Auth::guard('admin')->user()->name}}</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#logout-form').submit();">
+                      Logout
+                        </a>
+                    </li>
+                    <form id="logout-form" action="{{ route('admin.logout') }}" method="GET" style="display: none;">
                       @csrf
                   </form>
                   </ul>

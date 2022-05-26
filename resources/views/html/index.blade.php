@@ -37,7 +37,7 @@ input[type= number]::-webkit-inner-spin-button{
             
             <p class="mb-4 pr-5 font-large-p">With the help of the best Therapists, Psychiatrists and Counselors get back up on your feet.</p>
             <div class="btn-container ">
-              <a href="#mainpage_doctors" class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4">Get Started<i class="icofont-simple-right ml-2  "></i></a>
+              <a href="#doctor_mainpage" class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4">Get Started<i class="icofont-simple-right ml-2  "></i></a>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ input[type= number]::-webkit-inner-spin-button{
   <!--banner end-->
 
   <!--book an appointment section begin-->
-  <section class="section" id="mainpage_doctors">
+  <section class="section" id="doctor_mainpage">
     <div class="container ">
       <div class="row align-items-center ">
         <div class="col-lg-7">
@@ -59,7 +59,7 @@ input[type= number]::-webkit-inner-spin-button{
           <div class=" pl-4 mt-4 mt-lg-0">
             <h2 class="title-color">Easy, Fast<br>& Efficient</h2>
             <p class="mt-4 mb-5 font-large-p">Choose your therapist and book an appointment from the comfort of your home.</p>
-            <a href="{{ url('doctors/') }}" class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4">Book an Appointment<i class="icofont-simple-right ml-3"></i></a>
+            <a href="{{ route('home') }}" class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4">Book an Appointment<i class="icofont-simple-right ml-3"></i></a>
           </div>
         </div>
       </div>
@@ -274,25 +274,21 @@ input[type= number]::-webkit-inner-spin-button{
   </section>
   <!--contact us section end-->
 
-  <!--footer begin-->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top my-footer">
       <div class="col-md-4 d-flex align-items-center">
         <span class="text-muted">&copy; 2022 Ain Shams Uni. , Faculty of Science,<br> Maths. Department. </span>
       </div>
       <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <a href="{{ url('/') }}" class="a-no-decor"><img src="../img/icon.png" width="45"></a>
+        <a href="index.html" class="a-no-decor"><img src="../img/icon.png" width="45"></a>
       </div>
   
-      <ul class="nav col-md-4  justify-content-end d-flex">
-        <li class="ms-3"><a class="text-muted a-no-decor " href="https://github.com/AlyaaRushdy/Psyclini/tree/Final"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 18 18">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg></a></li>
-        <li class="ms-3"><a class="text-muted a-no-decor " href="https://www.facebook.com/FacultyofScienceASU/"><i class="icofont-facebook"></i></a></li>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted a-no-decor bi" href="https://github.com/AlyaaRushdy/Psyclini"><i class="icofont-github"></i></a></li>
+        <li class="ms-3"><a class="text-muted a-no-decor bi" href="https://www.facebook.com/FacultyofScienceASU/"><i class="icofont-facebook"></i></a></li>
       </ul>
     </footer>
   </div>
-  <!--footer end-->
 
 
 

@@ -57,24 +57,42 @@ class PatientController extends Controller
     public function postLogin(Request $request)
     {
         $request->validate([
-            'email' => 'required|email|',
-            'password' => 'required',
-        ]);
-        // $this->validator($request);
-   
-        // $credentials = $request->only('email', 'password');
-        if(Auth::guard('patient')->attempt(['email' => $request->email, 'password' => $request->password])){
-            return redirect()->route('home');
-        }
-  
-        return $this->loginFailed();
+            'email'=>'required|email|exists:patients,email',
+            'password'=>'required|min:5|max:30'
+         ],[
+             'email.exists'=>'This email is not exist',
+         ]);
+
+         $creds = $request->only('email','password');
+
+         if( Auth::guard('patient')->attempt($creds) ){
+             return redirect()->route('home');
+         }else{
+             return redirect()->route('signin')->with('fail','Incorrect Email or Password');
+         }
     }
     public function PostRegisteration(Request $request)
     {
   
+        $request->validate([
+                'email' => 'required|unique:patients,email',
+                'name' => 'required',
+                'phone' => 'required|unique:patients,phone|numeric',
+                'password' => 'required|min:5',
+                'dob' => 'required|before:today',
+            
+        ], [
+    
+                'email.unique' => 'this email is already exist.',
+                'phone.numeric' => 'the phone must be a number',
+                'phone.unique' => 'the phone must be unique',
+                'password.min' => 'the password must be greater than 5 letters',
+                'dob.before' => 'you should enter Your real birth date'
+        ]);
+        // dd('ahda');
 
         $patient = new Patient();
-    if ($image = $request->file('patient-pic')){
+        if ($image = $request->file('patient-pic')){
         $path = 'images/patients';
         $ext = $image->getClientOriginalExtension();
         $imageName = time(). '.' .$ext;
@@ -87,8 +105,10 @@ class PatientController extends Controller
     $patient->email = $request->input('email');   
     $patient->phone = $request->input('phone');   
     $patient->birth_date = $request->input('dob');
+    $patient->gender = $request->input('gender');
     $patient->password = Hash::make($request->input('password'));
     $patient->save();
+    // dd('aas');
     
     if(Auth::guard('patient')->attempt(['email' => $request->email, 'password' => $request->password])){
         return redirect()->route('home');

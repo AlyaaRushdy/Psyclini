@@ -46,9 +46,7 @@ h6, .h6 {
 p {
   line-height: 30px;
 }
-.fw-normal{
-  font-weight: normal !important;
-}
+
 .navbar-toggle .icon-bar {
   background: #223a66;
 }
@@ -1710,7 +1708,6 @@ a:focus {
 }
 .dir-rtl{
   direction: rtl;
-  text-align: right;
 }
 
 .testimonial-block a{
@@ -1814,17 +1811,12 @@ a:focus {
   padding-top: 20px;
 }
 .dep p{
-  padding-left: 2%;
+  padding-left: 3%;
   margin-bottom: 15px;
   font-size: 18px !important;
 }
-.dep p.ar{
-  padding-left: 0%;
-  padding-right: 2%;
-}
 .dep .ar{
   direction: rtl;
-  text-align: right;
 }
 .font-large-p{
   font-size: large;
@@ -1902,9 +1894,8 @@ a:focus {
   font-size: 1rem;
 }
 .appointment-fees i{
-  color: #7c4dff;
+  color: #4d77ff;
   padding-right: 1;
-  padding-right: .5rem;
 }
 .doctor-title{
   margin-bottom: .5rem !important;
@@ -2141,11 +2132,10 @@ footer ul li{
 .btn-toggle:hover,
 .btn-toggle:focus {
   color: #fff !important;
-  background-color: #4d77ff !important;
+  background-color: #4d77ff;
 }
 .btn-toggle[aria-expanded="true"] {
-  color: #fff !important;
-  background-color: #4d77ff !important;
+  color: #4d77ff;
 }
 
 .btn-toggle-nav .sidebar-subitem {
@@ -2216,11 +2206,9 @@ footer ul li{
 { color: #ffca08 ;  } /* Set yellow color when star hover */
 
 .doctor-page .rating{
-  margin-top: 0rem !important;
+  margin-top: .25rem !important;
   font-size: 1.35rem;
-  padding-left: 2rem !important;
 }
-
 .full-star{
   color: #ffca08 !important ;
 }
@@ -2604,7 +2592,9 @@ footer ul li{
 .ver-divider{
   padding: 0 .5rem !important;
 }
-
+.appointment-fees i{
+  padding-right: .5rem;
+}
 .book-button{
   margin-top: .75rem;
 }
@@ -2641,7 +2631,7 @@ footer ul li{
   margin-bottom: 2px
 }
 .blue-title{
-  color: #4d77ff !important;
+  color: #4d77ff;
 }
 .bold{
   font-weight: 500;
@@ -2674,76 +2664,9 @@ footer ul li{
 .settings-section h4{
   color: #4d77ff
 }
-.red-color{
-  color: red !important;
-}
-.required:after {
-  content:" *";
-  color: red;
-}
-.text-align-center{
-  text-align: -moz-center !important;
-  text-align: -webkit-center;
 
-}
-.book-appt .col-lg-4{
-  padding: 0;
-}
-.book-appt .appt-day{
-  padding: .5rem;
-  color: #7c4dff;
-  font-size: large;
-  margin: 0;
-  margin-bottom: .25rem;
-  line-height: 2rem;
-}
-.book-appt .single-appt{
-  padding: 1rem 0rem ;
-  cursor: pointer !important;
-}
-.single-appt input[type="radio"]{
-  display: none;
-}
-.single-appt span{
-  padding: 1rem 1.2rem;
-}
-.single-appt:hover span {
-  background: #7c4dff;
-  color: #fff;
-}
-.single-appt input:checked + span {
-  background: #7c4dff;
-  color: #fff;
-}
-.appts-details .col-lg-11{
-  padding: 0;
-}
-.appt-booked{
-  background-color: rgba(77, 119, 255, .75) !important;
-  color: #fff;
-}
-.appt-booked:hover  span {
-  background-color: rgba(77, 119, 255, 0) !important;
-  color: #fff;
-}
-.appt-booked input:checked + span {
-  background-color: rgba(77, 119, 255, 0) !important;
-  color: #fff;
-}
-.user-table .table td, .table th{
-  vertical-align: middle;
-}
-.user-history .feature-item{
-  padding: 1.75rem !important;
-  margin: 0;
-}
-.user-history button{
-  font-size: large !important;
-  font-weight: 500 !important;
-}
-.my-footer .bi-github:hover{
-  color: #4d77ff !important;
-}
+
+
 /*.game-wrap{
   min-height: 20rem !important;
 }*/

@@ -1,16 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\AppointmentDoctor;
 use App\Models\Doctor;
 use App\Models\Review;
-use App\Models\AppointmentDoctor;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Validator;
+use Database\Seeders\AppointmentSeeder;
 use App\Http\Requests\StoreDoctorRequest;
 use App\Http\Requests\UpdateDoctorRequest;
-use Database\Seeders\AppointmentSeeder;
 use Symfony\Component\Console\Input\Input;
 
 class MyDoctorController extends Controller
@@ -172,7 +172,7 @@ public function create_post()
         $s=$doctor->id;
 		
 		$d= Appointment::where('doctor_id',$s)->where('doctor_status',1)->first()->day;
-		
+        // dd($dd);		
 		$appointment1 = Appointment::where('doctor_id',$s)->where('doctor_status',1)->orderBy('time','asc')->where('day',$d)->get();
 		
 		$appointment2 = Appointment::where('doctor_id',$s)->where('doctor_status',1)->where('day', '!=',$d)->orderBy('time','asc')->get();
