@@ -95,23 +95,21 @@
                 <table class="table" id="table1">
                   <thead> 
                     <tr class="justify-content-between">
-                      
                       <th>Date</th>
                       <th>At</th>
                       <th>Message</th>
-						<th>Cancel</th>
+						          <th>Cancel</th>
                     </tr>
                   </thead>
                   <tbody>
                     @foreach($appointment as $appointment)
-					<tr>
-                      
+					          <tr>
                       <td>{{$appointment->date}}</td>
                       <td>{{$appointment->time}} </td>
                       <td>{{$appointment->message}} </td>
                       <td >
-					<button  class="btn btn-outline-danger"><a href="{{url('deleteApp/'.$appointment->id)}}">Cancel</a></button>
-					</td>
+					              <button  class="btn btn-outline-danger"><a href="{{url('deleteApp/'.$appointment->id)}}">Cancel</a></button>
+					            </td>
                     </tr>
                     @endforeach
                   </tbody>
@@ -134,7 +132,7 @@
       let table1 = document.querySelector('#table1');
       let dataTable = new simpleDatatables.DataTable(table1, {
         columns: [
-          { select: 2, sortable: false }
+          { select: 3, sortable: false }
         ]
       });
     </script>

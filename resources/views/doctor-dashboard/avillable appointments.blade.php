@@ -94,32 +94,29 @@
                 <table class="table" id="table1">
                   <thead> 
                     <tr class="justify-content-between">
-                      
                       <th>Day</th>
                       <th>At</th>
-					  <th>Status</th>
-                      <th>Availlable</th>
-						<th>Not Availlable</th>
+					            <th>Status</th>
+                      <th>Available</th>
+						          <th>Not Available</th>
                     </tr>
                   </thead>
                   <tbody>
                     @foreach($appointment as $appointment)
-					<tr>
-                      
+					          <tr>
                       <td>{{$appointment->day}}</td>
                       <td>{{$appointment->time}} </td>
-					  @if($appointment->doctor_status)
-					  <td>Available</td>
-                      @else
-						  <td>Not Available</td>
-					  @endif
-					  
-					  <td >
-					<button  class="btn btn-outline-success"><a href="{{url('AApp/'.$appointment->id)}}">Available</a></button>
-					</td>
+                      @if($appointment->doctor_status)
+                      <td>Available</td>
+                                @else
+                        <td>Not Available</td>
+                      @endif
                       <td >
-					<button  class="btn btn-outline-danger"><a href="{{url('NAApp/'.$appointment->id)}}">Not Available</a></button>
-					</td>
+                        <button  class="btn btn-outline-success"><a href="{{url('AApp/'.$appointment->id)}}">Available</a></button>
+                      </td>
+                      <td >
+                        <button  class="btn btn-outline-danger"><a href="{{url('NAApp/'.$appointment->id)}}">Not Available</a></button>
+                      </td>
                     </tr>
                     @endforeach
                   </tbody>
@@ -142,7 +139,7 @@
       let table1 = document.querySelector('#table1');
       let dataTable = new simpleDatatables.DataTable(table1, {
         columns: [
-          { select: 2, sortable: false }
+          { select: [3,4] , sortable: false }
         ]
       });
     </script>
